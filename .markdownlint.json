@@ -1,0 +1,23 @@
+{
+  "MD001": false,
+  "MD002": false,
+  "MD006": false,
+  "MD009": {
+    "br_spaces": 2
+  },
+  "MD013": false,
+  "MD014": false,
+  "MD022": {
+    "lines_below": 0
+  },
+  "MD024": false,
+  "MD026": false,
+  "MD032": false,
+  "MD033": {
+    "allowed_elements": ["br", "pre", "ul", "li", "ol", "details", "summary"]
+  },
+  "MD034": false,
+  "MD036": false,
+  "MD041": false,
+  "MD051": false
+}
