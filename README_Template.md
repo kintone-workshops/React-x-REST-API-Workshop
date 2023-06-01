@@ -22,22 +22,22 @@ TODO: Project Demo Gif ![INSERT_PROJECT_DEMO_GIF.gif](./docs/img/INSERT_PROJECT_
 ## Get Started
 _Clone the Repo & Install Dependencies_ 💪
 
-First, clone the [kintone-workshops/INSERT_REPO_NAME](https://github.com/kintone-workshops/INSERT_REPO_NAME) repo!  🚀  
+First, clone the [kintone-workshops/React-x-REST-API-Workshop](https://github.com/kintone-workshops/React-x-REST-API-Workshop) repo!  🚀  
 Then go inside the folder & install the dependencies!
 
 ```shell
 cd Downloads
 
-git clone https://github.com/kintone-workshops/INSERT_REPO_NAME
+git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
-cd INSERT_REPO_NAME
+cd React-x-REST-API-Workshop
 
 npm install
 
 npm install -g @kintone/customize-uploader
 ```
 
-Open the `INSERT_REPO_NAME` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line) as well:
+Open the `React-x-REST-API-Workshop` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line) as well:
 
 ```shell
 code .
