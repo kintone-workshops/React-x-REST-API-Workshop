@@ -90,14 +90,14 @@ Error [ERR_UNSUPPORTED_ESM_URL_SCHEME]: Only file and data URLs are supported by
 Solution:
 
 ```shell
-cd INSERT_REPO_NAME
+cd React-x-REST-API-Workshop
 npm install
 ```
 
 ### `npm install` command is not working
 
-1. Verify the Node.js & npm versions **inside** the `INSERT_REPO_NAME` folder
-2. Just installed Node.js? Verify you configured Node.js versions **inside** the `INSERT_REPO_NAME` folder
+1. Verify the Node.js & npm versions **inside** the `React-x-REST-API-Workshop` folder
+2. Just installed Node.js? Verify you configured Node.js versions **inside** the `React-x-REST-API-Workshop` folder
 
 * Mac: `nodenv local 14.5.0`
 * Windows: `nvm use 14.5.0`
