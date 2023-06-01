@@ -6,7 +6,6 @@ Let's create a front-end React Component that exchanges the contents of a 3rd pa
 
 In this 2 hour workshop, you'll walk away with a React project that retrieves data from and uploads data to Kintone, a web database service.
 
-
 We'll walk you through the basics of REST API calls and CORS, usage of State and Effect Hooks, setting up an Express back-end, and using it as a proxy.
 
 ---
