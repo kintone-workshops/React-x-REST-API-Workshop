@@ -35,7 +35,7 @@ If you don't have Node.js & npm installed, refer to the [Guide on Installing Nod
 * 6:20 PM - Web Database Setup
 * 6:50 PM - React Project Setup
 * 7:00 PM - Build the React App
-* 7:40 PM - Connect the App to Web Database
+* 7:40 PM - Connect the App to the Web Database
 * 7:50 PM - Wrap Up and Q&A
 * 8:00 PM - Thank you & Survey Raffle
 
