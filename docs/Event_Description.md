@@ -1,25 +1,29 @@
-# TODO: Workshop Title
+# JavaScript Workshop- Build a React App Using Web Database
 
-TODO: A hook sentence that will get people excited about the workshop.
+Let's create a front-end React Component that exchanges the contents of a 3rd party Web Database service using Express as a proxy.
 
 ## ABOUT THIS EVENT
 
-TODO: 3 sentence description of the event
+In this 2 hour workshop, you'll walk away with a React project that retrieves data from and uploads data to Kintone, a web database service.
 
-## 📎 PREREQUISITES
+
+We'll walk you through the basics of REST API calls and CORS, usage of State and Effect Hooks, setting up an Express back-end, and using it as a proxy.
+
+---
+
+## 📎 PREREQUISITE
 
 ### 🤖 CLONE THE WORKSHOP REPOSITORY
 
 This is the codebase that we will start the workshop from!
-* TODO: Bit.ly link to the workshop repository
+* [bit.ly/react-x-rest](https://bit.ly/react-x-rest)
 
 ### 📂 GET A KINTONE SUBDOMAIN (DATABASE)
 
 Apply for a free developer license and subdomain. You can also read up on all things Kintone API & customization!
 * [Kintone.dev/new](http://kintone.dev/new/)
 
-### 🔨 Node.js & npm
-TODO: Include this section if the workshop requires Node.js & npm
+### 💾 INSTALL NODE & NPM
 
 Verify that you have the latest Node.js & npm installed on your computer.
 If you don't have Node.js & npm installed, refer to the [Guide on Installing Node.js & npm {macOS & Windows}](https://dev.to/kintonedevprogram/guide-on-installing-nodejs-npm-macos-windows-16ii) post for instructions.
@@ -28,19 +32,37 @@ If you don't have Node.js & npm installed, refer to the [Guide on Installing Nod
 
 * 6:00 PM - Hello
 * 6:10 PM - Workshop Overview
-* 6:20 PM - TODO: Workshop Setup
-* 6:50 PM - Web Database Setup
-* 7:00 PM - TODO: Workshop Part 1
-* 7:40 PM - TODO: Workshop Part 2
+* 6:20 PM - Web Database Setup
+* 6:50 PM - React Project Setup
+* 7:00 PM - Build the React App
+* 7:40 PM - Connect the App to Web Database
 * 7:50 PM - Wrap Up and Q&A
 * 8:00 PM - Thank you & Survey Raffle
+
+## 📚 SUGGESTED READING
+We advise you to have a look through the following React documents beforehand:
+* [Quick Start - React](https://react.dev/learn)
+* [Writing Markup with JSX - React](https://react.dev/learn/writing-markup-with-jsx)
+
+---
+
+## 🕒 EVENT SCHEDULE (Pacific Time)
+
+* 6:00 PM - Hello
+* 6:10 PM - Workshop Overview
+* 6:20 PM - Web Database Setup
+* 6:50 PM - React Project Build
+* 7:50 PM - Wrap Up and Q&A
+* 8:00 PM - Thank you & Survey Raffle
+
+---
 
 ## 📺 CAN'T MAKE IT?
 
 Subscribe to our [YouTube channel](https://www.youtube.com/c/KintoneDeveloperProgram) to get notified when we post this workshop's recording!  
 
-Also, check out our most popular workshops with this playlist:  
-[Popular Kintone Workshops - YouTube](https://www.youtube.com/playlist?list=PL_Mf7E0DfF049YIoAz8jAFUx7i6b77O0G)
+This workshop will be live-streamed on YouTube Live.
+* [youtu.be/O6FnSGgGBRk](https://youtu.be/O6FnSGgGBRk)
 
 ## ⚙️ WHAT IS KINTONE?
 
