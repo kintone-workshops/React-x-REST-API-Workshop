@@ -1,9 +1,9 @@
 # Zoom Chat Snippets
 
 TODO: Perform the following steps to update the Zoom Chat Snippets:
-* TODO: swap `bit.ly/INSERT_REPO_SHORT_LINK` with the bit.ly link
-* TODO: swap `INSERT_REPO_NAME` with the workshop repo name
-* TODO: swap `youtube.com/live/INSERT_YOUTUBE_LINK` with YouTube Live Link
+* TODO: swap `bit.ly/react-x-rest` with the bit.ly link
+* TODO: swap `React-x-REST-API-Workshop` with the workshop repo name
+* TODO: swap `youtu.be/O6FnSGgGBRk` with YouTube Live Link
 * TODO: If not needed, remove `npm install -g @kintone/customize-uploader`
 * TODO: Update `Create a .env File` section
 * TODO: Update `Create a Kintone Web Database App` section
@@ -64,13 +64,13 @@ TODO: Perform the following steps to update the Zoom Chat Snippets:
 ## Quick Links
 
 🤖 Clone the Workshop Repository!
-https://bit.ly/INSERT_REPO_SHORT_LINK
+https://bit.ly/react-x-rest
 
 🚀 Have your Kintone Subdomain ready!
 https://kintone.dev/new
 
 📺 YouTube live stream
-https://youtube.com/live/INSERT_YOUTUBE_LINK
+https://youtu.be/O6FnSGgGBRk
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -82,7 +82,7 @@ Hello everyone, the workshop will start real soon!
 Be sure you are ready by completing the following tasks:
 
 1. 🤖 Clone the Workshop Repository!  
-https://bit.ly/INSERT_REPO_SHORT_LINK
+https://bit.ly/react-x-rest
 
 2. 🚀 Have your Kintone Subdomain ready!
 If you have not already, sign up for the FREE Kintone Developer License:  
@@ -102,7 +102,7 @@ Hello everyone, thank you for joining the workshop!
 Here is how to get started:
 
 1. 🤖 Clone the Workshop Repository!
-https://bit.ly/INSERT_REPO_SHORT_LINK
+https://bit.ly/react-x-rest
 
 2. 🚀 Have your Kintone Subdomain ready!
 If you have not already, sign up for the FREE Kintone Developer License by filling out this web form:  
@@ -115,7 +115,7 @@ https://kintone.dev/new
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtube.com/live/INSERT_YOUTUBE_LINK
+https://youtu.be/O6FnSGgGBRk
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -123,9 +123,9 @@ https://youtube.com/live/INSERT_YOUTUBE_LINK
 
 cd Downloads
 
-git clone https://github.com/kintone-workshops/INSERT_REPO_NAME
+git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
-cd INSERT_REPO_NAME
+cd React-x-REST-API-Workshop
 
 npm install
 
@@ -141,10 +141,10 @@ npm install -g @kintone/customize-uploader
 
 ## Workshop Steps
 
-INSERT_REPO_NAME/docs
+React-x-REST-API-Workshop/docs
 /Workshop_Steps.md
 
-or https://github.com/kintone-workshops/INSERT_REPO_NAME/blob/main/docs/Workshop_Steps.md
+or https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs/Workshop_Steps.md
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -163,7 +163,7 @@ https://kintone.dev/new
 =   =   =   =   =   =   =   =   =   =
 
 This is also live on YouTube:
-https://youtube.com/live/INSERT_YOUTUBE_LINK
+https://youtu.be/O6FnSGgGBRk
 
 It is a bit delayed but for those who want to "rewind", this is another great option ~
 
@@ -199,7 +199,7 @@ VITE_OPEN_AI_TOKEN="1234567890"
 
 Here is a rundown of common problems that may occur & its solutions!
 
-https://github.com/kintone-workshops/INSERT_REPO_NAME#debugging
+https://github.com/kintone-workshops/React-x-REST-API-Workshop#debugging
 
 If you have additional questions during the workshop, feel free to message me.
 
@@ -239,7 +239,7 @@ Set the following Field Codes
 - Be sure to click Save and Activate App buttons! 💪
 
 Ref:  
-https://github.com/kintone-workshops/INSERT_REPO_NAME/blob/main/docs/Workshop_Steps.md#d-create-a-kintone-web-database-app
+https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs/Workshop_Steps.md#d-create-a-kintone-web-database-app
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -354,7 +354,7 @@ URL: example.kintone.com
 
 If you are ever lost, check out our step-by-step guide here:
 
-https://github.com/kintone-workshops/INSERT_REPO_NAME/blob/main/docs/Workshop_Steps.md
+https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs/Workshop_Steps.md
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -420,7 +420,7 @@ App ID = 1
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtube.com/live/INSERT_YOUTUBE_LINK
+https://youtu.be/O6FnSGgGBRk
 
 =   =   =   =   =   =   =   =   =   =
 
