@@ -19,15 +19,15 @@ This guide outlines all the steps required to complete the workshop.
 
 ## A. Get started - clone the repo & install dependencies
 
-First, clone the [kintone-workshops/INSERT_REPO_NAME](https://github.com/kintone-workshops/INSERT_REPO_NAME) repo!  🚀  
+First, clone the [kintone-workshops/React-x-REST-API-Workshop](https://github.com/kintone-workshops/React-x-REST-API-Workshop) repo!  🚀  
 Then go inside the folder & install the dependencies!
 
 ```shell
 cd Downloads
 
-git clone https://github.com/kintone-workshops/INSERT_REPO_NAME
+git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
-cd INSERT_REPO_NAME
+cd React-x-REST-API-Workshop
 
 npm install
 
