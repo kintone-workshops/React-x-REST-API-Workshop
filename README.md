@@ -1,3 +1,8 @@
+# ⚠️ Repo is under construction ⚠️
+Please check back later for updates.
+
+![Banner](docs/img/banner.png)
+
 # Kintone Workshop Repo Template
 
 ## Quick TODO: Items
