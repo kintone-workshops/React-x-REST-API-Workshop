@@ -1,10 +1,10 @@
-# TODO: Insert workshop's title
+# JavaScript Workshop - Build a React App Using Web Database
 
 ---
 
-TODO: ![banner.png](./docs/img/banner.png) - Add banner image
+![banner.png](./docs/img/banner.png)
 
-TODO: Insert the workshop's hook sentence here
+Let's create a front-end React Component that exchanges the contents of a 3rd party Web Database service using Express as a proxy.
 
 ## Outline <!-- omit in toc -->
 * [Completed Project](#completed-project)
