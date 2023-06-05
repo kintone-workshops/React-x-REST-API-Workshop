@@ -43,19 +43,6 @@ We advise you to have a look through the following React documents beforehand:
 * [Quick Start - React](https://react.dev/learn)
 * [Writing Markup with JSX - React](https://react.dev/learn/writing-markup-with-jsx)
 
----
-
-## 🕒 EVENT SCHEDULE (Pacific Time)
-
-* 6:00 PM - Hello
-* 6:10 PM - Workshop Overview
-* 6:20 PM - Web Database Setup
-* 6:50 PM - React Project Build
-* 7:50 PM - Wrap Up and Q&A
-* 8:00 PM - Thank you & Survey Raffle
-
----
-
 ## 📺 CAN'T MAKE IT?
 
 Subscribe to our [YouTube channel](https://www.youtube.com/c/KintoneDeveloperProgram) to get notified when we post this workshop's recording!  
