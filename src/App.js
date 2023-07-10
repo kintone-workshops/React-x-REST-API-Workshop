@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Country, State, City } from "country-state-city";
 import Select from 'react-select'
 import LoadingSpinner from './components/spinner.js'
+import CountryPicker from './components/countryPicker.js'
+import StatePicker from './components/statePicker.js'
+import CityPicker from './components/cityPicker.js'
 
 // Import the script to make GET API calls
 import getRecords from './requests/getRecords.js';
@@ -49,50 +52,11 @@ function App() {
       Welcome to React and Kintone!
       <div className="selectDiv">
         <p>Pick a Country</p>
-        <Select
-          options={Country.getAllCountries()}
-          getOptionLabel={(options) => {
-            return options["name"];
-          }}
-          getOptionValue={(options) => {
-            return options["name"];
-          }}
-          value={selectedCountry}
-          onChange={(item) => {
-            setSelectedCountry(item);
-          }}
-        />
+        <CountryPicker selectedCountry={selectedCountry} setSelectedCountry={setSelectedCountry}/>
         <p>Then Pick a State</p>
-        <Select
-          options={State?.getStatesOfCountry(selectedCountry?.isoCode)}
-          getOptionLabel={(options) => {
-            return options["name"];
-          }}
-          getOptionValue={(options) => {
-            return options["name"];
-          }}
-          value={selectedState}
-          onChange={(item) => {
-            setSelectedState(item);
-          }}
-        />
+        <StatePicker selectedCountry={selectedCountry} selectedState={selectedState} setSelectedState={setSelectedState}/>
         <p>Lastly, Pick a City</p>
-        <Select
-          options={City.getCitiesOfState(
-            selectedState?.countryCode,
-            selectedState?.isoCode
-          )}
-          getOptionLabel={(options) => {
-            return options["name"];
-          }}
-          getOptionValue={(options) => {
-            return options["name"];
-          }}
-          value={selectedCity}
-          onChange={(item) => {
-            setSelectedCity(item);
-          }}
-        />
+        <CityPicker selectedState={selectedState} selectedCity={selectedCity} setSelectedCity={setSelectedCity}/>
       </div>
       <div className="submitDiv">
         <button onClick={submit}>
