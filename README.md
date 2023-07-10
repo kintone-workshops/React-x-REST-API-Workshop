@@ -69,7 +69,100 @@ TODO: Copy the outline of the workshop steps from [Workshop_Steps.md](./docs/Wor
 
 Here is a rundown of common problems that may occur & their solutions!
 
-TODO: Update the following section with relevant Debug snippets - See [Snippets_Debug.md](./Snippets_Debug.md)
+### `npm install` command is not working
+
+1. Verify the Node.js & npm versions **inside** the `React-x-REST-API-Workshop` folder
+2. Just installed Node.js? Verify you configured Node.js versions **inside** the `React-x-REST-API-Workshop` folder
+
+* Mac: `nodenv local 14.5.0`
+* Windows: `nvm use 14.5.0`
+
+Not the correct versions, or confused? 🤔 → Check out the [Guide on Installing Node.js & npm](./docs/Install_NodeJS_npm.md) Doc
+
+### Errors related to .env
+
+If you get one of the following error messages:  
+
+* `[webpack-cli] Error: Missing environment variable: KINTONE_BASE_URL`
+* `[webpack-cli] Error: Missing environment variable: KINTONE_PASSWORD`
+* `[webpack-cli] Error: Missing environment variable: KINTONE_USERNAME`
+* `[webpack-cli] Error: Missing environment variable: VIEW_ID`
+* `[webpack-cli] TypeError: Cannot convert undefined or null to object`
+* `Failed to find .env file at default paths: [./.env,./.env.js,./.env.json]`
+* `Failed to find .env file at default paths: [./.env,./.env.js,./.env.json]`
+* `Failed to upload JavaScript/CSS files`
+* `KintoneRestAPIError: [520] [CB_WA01] Password authentication failed...`
+
+Then please verify that
+* your `.env` file has been correctly configured
+* your username and password for your Kintone account are correct
+* you have not modified the `.env.example`
+
+### Errors related to Node.js & npm
+
+Error Message:
+
+```shell
+❯ npm run start
+
+> react-x-rest-api-workshop@1.0.0 start
+> react-scripts start
+
+sh: react-scripts: command not found
+```
+
+Solution:
+
+```shell
+cd React-x-REST-API-Workshop
+npm install
+```
+
+### npm run start command is not working
+
+Error Message:
+
+```shell
+Starting the development server...
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:417:16)
+    at handleParseError (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:471:10)
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:503:5
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:358:12
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:373:3
+    at iterateNormalLoaders (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
+    at iterateNormalLoaders (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
+/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/react-scripts/scripts/start.js:19
+  throw err;
+  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/util/createHash.js:135:53)
+    at NormalModule._initBuildHash (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:417:16)
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:452:10
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:323:13
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:367:11
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:233:18
+    at context.callback (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/babel-loader/lib/index.js:59:103 {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.16.0
+```
+
+Solution:
+1. Verify that `.env` file has been correctly configured
+1. 
 
 ### Not seeing a highlighted `TODO:`?
 Click the `Install` button on the VS Code pop-up message to install [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight).
