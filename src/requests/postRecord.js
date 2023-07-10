@@ -4,11 +4,8 @@
 const addRecordEndpoint = 'http://localhost:5000/postData';
 
 export default async function postRecord(location) {
-
   /* Pass the POST API request from React to Express server */
   // - - - - - - - START - - - - - - - -
-
-  console.log(location)
   const recordBodyParameters = {
     'country': location.country,
     'state': location.state,
@@ -28,7 +25,8 @@ export default async function postRecord(location) {
 
   console.log(JSON.stringify(jsonResponse));
 
+  // The successful response from Kintone doesn't contain any information we'll use on the front-end.
+  // So we'll just pass it back as JSON as is.
   return jsonResponse;
-
   // - - - - - - - END - - - - - - - - -
 };

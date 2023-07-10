@@ -2,9 +2,9 @@
 
 /**
  * Notes on Kintone responses:
- * record.title.value = value of the Title field
- * record.author.value = value of the Author field
- * record.Record_number.value = value of the Record number field (unique key for the record)
+ * Our response comes back as JSON. We could manipulate the data here, but!
+ * The backend will also pass back JSON to our frontend.
+ * So we'll simply receive the data and pass it along as is, and parse it on the front.
  */
 
 // Declare the GET endpoint defined in our Express server

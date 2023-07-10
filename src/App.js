@@ -5,17 +5,19 @@ import CountryPicker from './components/countryPicker.js'
 import StatePicker from './components/statePicker.js'
 import CityPicker from './components/cityPicker.js'
 
-// Import the script to make GET API calls
+// Import the functions to make API calls
 import getRecords from './requests/getRecords.js';
 import postRecord from './requests/postRecord.js';
 
 function App() {
+  // Our hooks for data and setting that data.
   const [loading, setLoading] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedState, setSelectedState] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [records, setRecords] = useState([]);
 
+  // Submit button's onclick function. Calls POST request
   const submit = async () => {
     setLoading(true);
     let location = {
@@ -33,6 +35,7 @@ function App() {
     setLoading(false);
   }
 
+  // Get button's onClick function. Calls GET API request.
   const get = async () => {
     setLoading(true);
     let response = await getRecords();
@@ -44,8 +47,10 @@ function App() {
     setLoading(false);
   }
 
+  // Our react JSX.
   return (
     <div className="main">
+      {/* If loading is true, show a spinner, otherwise show nothing. */}
       {loading ? (
         <div className="loadingDiv">
           <LoadingSpinner />

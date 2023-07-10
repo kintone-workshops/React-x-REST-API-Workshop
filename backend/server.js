@@ -44,7 +44,7 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
 // - - - - - - - START - - - - - - - -
 
 // This runs if a POST request calls for localhost:5000/postData
-
+// Our Kintone app's field codes were 'country' 'state' and 'city'. So we'll use those below:
 app.post('/postData', cors(corsOptions), async (req, res) => {
   const requestBody = {
     'app': appID,
