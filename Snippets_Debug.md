@@ -107,10 +107,7 @@ Not the correct versions, or confused? 🤔 → Check out the [Guide on Installi
 ### `npm run upload` failed?
 _@kintone/customize-uploader not working?_ Let's try the following:
 
-(1) Verify that customize uploader was installed globally
-* `npm install -g @kintone/customize-uploader`
-
-(2) Verify that the .env login info is correct (including the password)
+(1) Verify that the .env login info is correct (including the password)
 * ⚠️ Make sure your login info is inside the `.env` file & **NOT** the `.env.example` file!
 * ⚠️ Verify that KINTONE_BASE_URL input is correctly formatted:
   * ✅ Correct Format: `https://example.kintone.com`
@@ -118,7 +115,7 @@ _@kintone/customize-uploader not working?_ Let's try the following:
 * ⚠️ Re-run the npm commands after saving the .env file
 * ⚙️ Details: [Step 4 - Create a `.env` File](./docs/Workshop_Steps.md#step-4---create-a-env-file-)
 
-(3) Verify your [customize-manifest.json](customize-manifest.json) was updated with the correct App ID
+(2) Verify your [customize-manifest.json](customize-manifest.json) was updated with the correct App ID
 * ⚙️ Details: [Step 5 - Update customize-manifest.json with the App ID](./docs/Workshop_Steps.md#step-5---update-customize-manifestjson-with-the-app-id-)
 
-(4) Verify that the `npm run build` command was run before the `npm run upload`
+(3) Verify that the `npm run build` command was run before the `npm run upload`

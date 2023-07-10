@@ -9,7 +9,6 @@ Please check back later for updates.
 * [x] swap `bit.ly/react-x-rest` with the bit.ly link
 * [x] swap `React-x-REST-API-Workshop` with the workshop repo name
 * [x] swap `youtu.be/O6FnSGgGBRk` with YouTube Live Link
-* [ ] If not needed, remove `npm install -g @kintone/customize-uploader`
 * [ ] Update `Create a .env File` section
 * [ ] Update `Create a Kintone Web Database App` section
 * [ ] Swap `bit.ly/INSERT_SURVEY_LINK` with the Survey Link

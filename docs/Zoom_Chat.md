@@ -4,7 +4,6 @@ TODO: Perform the following steps to update the Zoom Chat Snippets:
 * TODO: swap `bit.ly/react-x-rest` with the bit.ly link
 * TODO: swap `React-x-REST-API-Workshop` with the workshop repo name
 * TODO: swap `youtu.be/O6FnSGgGBRk` with YouTube Live Link
-* TODO: If not needed, remove `npm install -g @kintone/customize-uploader`
 * TODO: Update `Create a .env File` section
 * TODO: Update `Create a Kintone Web Database App` section
 * TODO: Swap `bit.ly/INSERT_SURVEY_LINK` with the Survey Link
@@ -128,14 +127,6 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
-
-npm install -g @kintone/customize-uploader
-
-=   =   =   =   =   =   =   =   =   =
-
-## Kintone Customize Uploader
-
-npm install -g @kintone/customize-uploader
 
 =   =   =   =   =   =   =   =   =   =
 

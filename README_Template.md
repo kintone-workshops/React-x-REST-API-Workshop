@@ -33,8 +33,6 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
-
-npm install -g @kintone/customize-uploader
 ```
 
 Open the `React-x-REST-API-Workshop` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line) as well:

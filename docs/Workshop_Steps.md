@@ -30,8 +30,6 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
-
-npm install -g @kintone/customize-uploader
 ```
 
 ## B. Get your free Kintone database
