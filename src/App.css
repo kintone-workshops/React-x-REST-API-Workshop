@@ -3,6 +3,7 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  padding: 5%;
 }
 
 .loadingDiv {
