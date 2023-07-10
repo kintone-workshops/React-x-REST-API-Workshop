@@ -30,8 +30,6 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
-
-npm install -g @kintone/customize-uploader
 ```
 
 ## B. Get your free Kintone database
@@ -64,19 +62,14 @@ This is where we will be saving the login credentials and API Keys.
 
 Here is what your `.env` might look like:
 
-TODO: Verify that .env file is up-to-date
-
 ```txt
-KINTONE_BASE_URL="https://example.kintone.com"
-KINTONE_USERNAME="MyEmail@example.com"
-KINTONE_PASSWORD="ILoveKintone!"
+SUBDOMAIN = "example"
+APPID = "1"
+APITOKEN = "1J22qNAR54I4eiMcd0JmfDAavJNfNJDVaqt34X9A"
 ```
 
 So far, you can fill out the following variables:
-* `KINTONE_BASE_URL`
-* `KINTONE_USERNAME`
-* `KINTONE_PASSWORD`
-* `VITE_KINTONE_SUBDOMAIN`
+* `SUBDOMAIN`
 
 ### ⚠️ WARNING ⚠️ <!-- omit in toc -->
 
@@ -134,28 +127,10 @@ We need to generate an API Token for our Kintone App.
 1. Click the **Save** button on the bottom right side of the screen.
 1. Click the **Update App** button on the upper right side of the screen.
 
-## F. Edit your customize-manifest.json
+![KintoneApp_URL.png](img/common_kintone/KintoneApp_URL.png)
 
-TODO: Verify that `Edit your customize-manifest.json` section is up-to-date
-
-Next, we need to tell our uploading scripts which Kintone App we will be working on.
-
-Open your [customize-manifest.json](../customize-manifest.json). It will look like this:
-
-```json
-{
-    "app": "1",
-    "scope": "ALL",
-    "desktop": {
-        "js": ["dist/KintoneCustomization.js"],
-        "css": []
-    },
-    "mobile": {
-        "js": [],
-        "css": []
-    }
-}
-```
+### Update the `.env` file with the App ID as well! <!-- omit in toc -->
+Input the App ID into the `VITE_KINTONE_APPID` variable in your `.env` file.
 
 If this is NOT your first Kintone App, then you need to update the `"app"` variable with your App ID!
 
@@ -168,11 +143,6 @@ Kintone App's URL follows this template:
 * `https://<SUBDOMAIN>.kintone.com/k/<App ID>/show#record=<RECORD ID>`
 
 So then the `https://devevents.kintone.com/k/52/` URL tells us that this App's ID is `52`
-
-![KintoneApp_URL.png](img/common_kintone/KintoneApp_URL.png)
-
-### Update the `.env` file with the App ID as well! <!-- omit in toc -->
-Input the App ID into the `VITE_KINTONE_APPID` variable in your `.env` file.
 
 ---
 
