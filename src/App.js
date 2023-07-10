@@ -1,7 +1,5 @@
 import './App.css';
 import { useState } from "react";
-import { Country, State, City } from "country-state-city";
-import Select from 'react-select'
 import LoadingSpinner from './components/spinner.js'
 import CountryPicker from './components/countryPicker.js'
 import StatePicker from './components/statePicker.js'
@@ -25,7 +23,13 @@ function App() {
       state: selectedState.name,
       city: selectedCity.name
     }
-    let response = await postRecord(location);
+    console.log(selectedCountry)
+    if (selectedCountry === "") {
+      alert("At least pick a country...")
+    } else {
+      let response = await postRecord(location);
+      console.log(response)
+    }
     setLoading(false);
   }
 
@@ -33,12 +37,10 @@ function App() {
     setLoading(true);
     let response = await getRecords();
     let locationArray = [];
-    console.log(response);
-    response.records.forEach(record => {
-      locationArray.push(<li>{record.country.value}, {record.state.value}, {record.city.value}</li>)
+    response.records.forEach((record, index) => {
+      locationArray.push(<li key={index}>{record.country.value}, {record.state.value}, {record.city.value}</li>)
     });
     setRecords(locationArray);
-    console.log(records)
     setLoading(false);
   }
 
@@ -59,10 +61,10 @@ function App() {
         <CityPicker selectedState={selectedState} selectedCity={selectedCity} setSelectedCity={setSelectedCity}/>
       </div>
       <div className="submitDiv">
-        <button onClick={submit}>
+        <button onClick={submit} disabled={loading ? true : false}>
           Submit!
         </button>
-        <button onClick={get}>
+        <button onClick={get} disabled={loading ? true : false}>
           Get!
         </button>
       </div>

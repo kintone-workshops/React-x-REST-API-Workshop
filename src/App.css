@@ -12,3 +12,7 @@
   transform: translate(-50%, -50%);
   z-index: 99;
 }
+
+.selectDiv {
+  padding: 5%;
+}
