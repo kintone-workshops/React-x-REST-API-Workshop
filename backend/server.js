@@ -7,7 +7,7 @@ const PORT = 5000;
 const app = express();
 
 // Hide sensitive info in a .env file with dotenv
-require('dotenv').config();
+require('dotenv').config({path: '../.env'});
 
 // Get Kintone credentials from a .env file
 const subdomain = process.env.SUBDOMAIN;
