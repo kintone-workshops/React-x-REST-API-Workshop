@@ -2,27 +2,50 @@ import './App.css';
 import { useState } from "react";
 import { Country, State, City } from "country-state-city";
 import Select from 'react-select'
+import LoadingSpinner from './components/spinner.js'
 
 // Import the script to make GET API calls
 import getRecords from './requests/getRecords.js';
 import postRecord from './requests/postRecord.js';
 
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [selectedState, setSelectedState] = useState(null);
-  const [selectedCity, setSelectedCity] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedState, setSelectedState] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
+  const [records, setRecords] = useState([]);
 
-  const submit = () => {
+  const submit = async () => {
+    setLoading(true);
     let location = {
       country: selectedCountry.name,
       state: selectedState.name,
       city: selectedCity.name
     }
-    postRecord(location)
+    let response = await postRecord(location);
+    setLoading(false);
+  }
+
+  const get = async () => {
+    setLoading(true);
+    let response = await getRecords();
+    let locationArray = [];
+    console.log(response);
+    response.records.forEach(record => {
+      locationArray.push(<li>{record.country.value}, {record.state.value}, {record.city.value}</li>)
+    });
+    setRecords(locationArray);
+    console.log(records)
+    setLoading(false);
   }
 
   return (
     <div className="main">
+      {loading ? (
+        <div className="loadingDiv">
+          <LoadingSpinner />
+        </div>
+      ) : null}
       Welcome to React and Kintone!
       <div className="selectDiv">
         <p>Pick a Country</p>
@@ -75,6 +98,12 @@ function App() {
         <button onClick={submit}>
           Submit!
         </button>
+        <button onClick={get}>
+          Get!
+        </button>
+      </div>
+      <div className="listRecordsDiv">
+        <ul>{records}</ul>
       </div>
     </div>
   );
