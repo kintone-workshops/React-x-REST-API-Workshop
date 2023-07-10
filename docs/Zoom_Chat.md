@@ -1,9 +1,6 @@
 # Zoom Chat Snippets
 
 TODO: Perform the following steps to update the Zoom Chat Snippets:
-* TODO: swap `bit.ly/react-x-rest` with the bit.ly link
-* TODO: swap `React-x-REST-API-Workshop` with the workshop repo name
-* TODO: swap `youtu.be/O6FnSGgGBRk` with YouTube Live Link
 * TODO: Update `Create a .env File` section
 * TODO: Update `Create a Kintone Web Database App` section
 * TODO: Swap `bit.ly/INSERT_SURVEY_LINK` with the Survey Link

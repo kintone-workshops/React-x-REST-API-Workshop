@@ -6,9 +6,6 @@ Please check back later for updates.
 # Kintone Workshop Repo Template
 
 ## Quick TODO: Items
-* [x] swap `bit.ly/react-x-rest` with the bit.ly link
-* [x] swap `React-x-REST-API-Workshop` with the workshop repo name
-* [x] swap `youtu.be/O6FnSGgGBRk` with YouTube Live Link
 * [ ] Update `Create a .env File` section
 * [ ] Update `Create a Kintone Web Database App` section
 * [ ] Swap `bit.ly/INSERT_SURVEY_LINK` with the Survey Link
