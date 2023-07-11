@@ -188,7 +188,17 @@ The important line is `Error: listen EADDRINUSE: address already in use :::5000`
 This means that the port 5000 is already in use.
 
 Restart the terminal and try again.  
-If the error persists, try restarting your computer.
+
+If the error persists, let's kill the process that is using port 5000 manually.
+
+```shell
+# Find the process that is using port 5000
+lsof -i tcp:5000
+# Kill the process
+kill -9 <PID>
+```
+
+For more information, refer to the [How to kill server when seeing "EADDRINUSE: address already in use" post by B. Chen](https://levelup.gitconnected.com/how-to-kill-server-when-seeing-eaddrinuse-address-already-in-use-16c4c4d7fe5d).
 
 ### Not seeing a highlighted `TODO:`?
 Click the `Install` button on the VS Code pop-up message to install [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight).
