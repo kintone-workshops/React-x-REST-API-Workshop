@@ -50,6 +50,7 @@ function App() {
   // Our react JSX.
   return (
     <div className="main">
+      <h2>I Use Kintone!</h2>
       {/* If loading is true, show a spinner, otherwise show nothing. */}
       {loading ? (
         <div className="loadingDiv">
