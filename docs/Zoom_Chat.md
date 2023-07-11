@@ -207,14 +207,12 @@ How to set the Field Codes for the Kintone App?
 ⚠️ Field Codes are case-sensitive ⚠️
 
 Set the following Field Codes
-* Radio button #1  → animal
-* Radio button #2  → emotion
-* Text             → random
-* Check Box        → clothes
-* Date and Time    → dateTime
-* Attachment     → result
-* Space #1    → generateButton
-* Space #2    → spinner
+
+3x Text Fields
+* Field Name -> Field Code
+* Country -> country
+* State -> state
+* City -> city
 
 - Save!
 - Be sure to click Save and Activate App buttons! 💪
@@ -377,10 +375,15 @@ More information:
 
 =   =   =   =   =   =   =   =   =   =
 
-## Compile and upload the code to Kintone
+## Start the servers
 
-1. npm run build
-1. npm run upload
+Open two terminal windows
+
+From the project root directory, run:
+npm run start
+
+From the backend directory, run:
+npm run start
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -388,7 +391,7 @@ More information:
 
 Go to your Kintone App's custom view & grab the URL
 Kintone App's URL follows this template:
-https://<SUBDOMAIN>.kintone.com/k/<App ID>/?view=<View ID>
+https://<SUBDOMAIN>.kintone.com/k/<App ID>/
 Example:
 
 https://example.kintone.com/k/1/
