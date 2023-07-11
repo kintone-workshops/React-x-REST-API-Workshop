@@ -200,6 +200,7 @@ const apiToken = process.env.APITOKEN;
 ```
 
 And lastly, we have some CORS configuration:
+
 ```javascript
 app.use(cors());
 const corsOptions = {
@@ -208,13 +209,13 @@ const corsOptions = {
 ```
 
 and some pre-configured REST API endpoints:
+
 ```javascript
 const multipleRecordsEndpoint = `https://${subdomain}.kintone.com/k/v1/records.json?app=${appID}`
 const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?app=${appID}`;
 ```
-We got this information from our [Documentation Site](www.kintone.dev), specifically from our [REST API Records](https://kintone.dev/en/docs/kintone/rest-api/records/) documentation.
 
-
+We got this information from our [Kintone Developer Program](https://kintone.dev/en/) website, specifically from our [REST API Records](https://kintone.dev/en/docs/kintone/rest-api/records/) documentation.
 
 ---
 
