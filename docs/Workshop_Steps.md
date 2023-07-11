@@ -3,6 +3,8 @@ This guide outlines all the steps required to complete the workshop.
 
 ## Outline <!-- omit in toc -->
 * [A. Get started - clone the repo \& install dependencies](#a-get-started---clone-the-repo--install-dependencies)
+  * [Terminal 1](#terminal-1)
+  * [Terminal 2](#terminal-2)
 * [B. Get your free Kintone database](#b-get-your-free-kintone-database)
 * [C. Create a `.env` file](#c-create-a-env-file)
 * [D. Create a Kintone web database app](#d-create-a-kintone-web-database-app)
@@ -12,7 +14,11 @@ This guide outlines all the steps required to complete the workshop.
 * [H. Edit server.js](#h-edit-serverjs)
   * [What do you mean, CORS?](#what-do-you-mean-cors)
   * [Overview](#overview)
-  * [Let's get Coding](#lets-get-coding)
+  * [server.js setup](#serverjs-setup)
+  * [Let's Start Coding!](#lets-start-coding)
+* [I. Start the servers](#i-start-the-servers)
+  * [Terminal 1 - Frontend](#terminal-1---frontend)
+  * [Terminal 2 - Backend](#terminal-2---backend)
 * [Check your work](#check-your-work)
 * [Still got a problem?](#still-got-a-problem)
 
@@ -221,7 +227,6 @@ We got this information from our [Kintone Developer Program](https://kintone.dev
 
 We've instantiated our Express Server as `app`, so let's first make a `GET` request route on `localhost:50000/getData`.
 
-
 ```javascript
 app.get('/getData', cors(corsOptions), async (req, res) => {
 // configure here
@@ -246,6 +251,7 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
   const jsonResponse = await response.json();
 });
 ```
+
 Like a normal `fetch` request, we designate some options and our headers with our API Token.
 Designate a new constant variable `response` and set it equal to the result of awaiting a `fetch` request to `multipleRecordsEndpoint`. This is a `GET` request, so when we **GET** our database records, we want to see **all** records in the database. Therefore, we are fetching from `records.json`.
 
@@ -275,6 +281,7 @@ app.post('/postData', cors(corsOptions), async (req, res) => {
 
 });
 ```
+
 This time, specify `app.post`, with an endpoint of `/postData`. Express Server makes it easy to create different routes.
 
 Next, we'll structure our data to save to Kintone.
