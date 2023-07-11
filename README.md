@@ -139,51 +139,56 @@ cd React-x-REST-API-Workshop
 npm install
 ```
 
-### npm run start command is not working
+### Express Server inside backend folder not working?
+
+Inside `backend` folder and trying to execute `npm run start` command
 
 Error Message:
 
 ```shell
-Starting the development server...
+> backend@1.0.0 start
+> nodemon --watch .env --watch ../frontend server.js
 
-Error: error:0308010C:digital envelope routines::unsupported
-    at new Hash (node:internal/crypto/hash:71:19)
-    at Object.createHash (node:crypto:133:10)
-    at module.exports (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/util/createHash.js:135:53)
-    at NormalModule._initBuildHash (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:417:16)
-    at handleParseError (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:471:10)
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:503:5
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:358:12
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:373:3
-    at iterateNormalLoaders (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:214:10)
-    at iterateNormalLoaders (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:221:10)
-/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/react-scripts/scripts/start.js:19
-  throw err;
-  ^
+[nodemon] 2.0.22
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): .env ../frontend
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+node:events:491
+      throw er; // Unhandled 'error' event
+      ^
 
-Error: error:0308010C:digital envelope routines::unsupported
-    at new Hash (node:internal/crypto/hash:71:19)
-    at Object.createHash (node:crypto:133:10)
-    at module.exports (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/util/createHash.js:135:53)
-    at NormalModule._initBuildHash (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:417:16)
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:452:10
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/webpack/lib/NormalModule.js:323:13
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:367:11
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:233:18
-    at context.callback (/Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
-    at /Users/g001494/GitHub_Root/React-x-REST-API-Workshop/node_modules/babel-loader/lib/index.js:59:103 {
-  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
-  library: 'digital envelope routines',
-  reason: 'unsupported',
-  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at Function.listen (/Users/username/Downloads/React-x-REST-API-Workshop/backend/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/username/Downloads/React-x-REST-API-Workshop/backend/server.js:78:5)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1767:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
 }
 
-Node.js v18.16.0
+Node.js v18.16.1
+[nodemon] app crashed - waiting for file changes before starting...
 ```
 
-Solution:
-1. Verify that `.env` file has been correctly configured
-1. 
+Solution:  
+The important line is `Error: listen EADDRINUSE: address already in use :::5000`.  
+This means that the port 5000 is already in use.
+
+Restart the terminal and try again.  
+If the error persists, try restarting your computer.
 
 ### Not seeing a highlighted `TODO:`?
 Click the `Install` button on the VS Code pop-up message to install [TODO Highlight extension](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight).
