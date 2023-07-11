@@ -36,7 +36,13 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
+
+cd ./backend
+
+npm install
 ```
+
+⚡ You will need two terminal windows open for this workshop.
 
 Open the `React-x-REST-API-Workshop` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line) as well:
 
