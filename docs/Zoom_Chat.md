@@ -170,13 +170,9 @@ Using the .env.example file as a template, create a .env file.
 
 Then input your Kintone credentials like the following:
 
-KINTONE_BASE_URL="https://example.kintone.com"
-KINTONE_USERNAME="MyEmail@example.com"
-KINTONE_PASSWORD="ILoveKintone!"
-VITE_KINTONE_SUBDOMAIN="example"
-VITE_KINTONE_TOKEN="abcd2ef3g3hij2kl1"
-VITE_KINTONE_APPID="1"
-VITE_OPEN_AI_TOKEN="1234567890"
+SUBDOMAIN = "example"
+APPID = "1"
+APITOKEN = "1J22qNAR54I4eiMcd0JmfDAavJNfNJDVaqt34X9A"
 
 ⚠️ DO NOT DELETE THE .env.example FILE!
 .env.example is used by env-cmd to verify that the .env file is correctly configured.
