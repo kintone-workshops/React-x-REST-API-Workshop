@@ -26,7 +26,11 @@ Let's create a front-end React Component that exchanges the contents of a 3rd pa
 _Clone the Repo & Install Dependencies_ 💪
 
 First, clone the [kintone-workshops/React-x-REST-API-Workshop](https://github.com/kintone-workshops/React-x-REST-API-Workshop) repo!  🚀  
-Then go inside the folder & install the dependencies!
+Then go inside the folders & install the dependencies!
+
+⚡ Two terminal windows are required for this workshop.
+
+### Terminal 1
 
 ```shell
 cd Downloads
@@ -36,13 +40,21 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 cd React-x-REST-API-Workshop
 
 npm install
-
-cd ./backend
-
-npm install
 ```
 
-⚡ You will need two terminal windows open for this workshop.
+### Terminal 2
+
+```shell
+cd Downloads/React-x-REST-API-Workshop
+
+cd backend && npm install
+```
+
+### ⚠️ WARNING ⚠️ <!-- omit in toc -->
+⚡ **Node.js v18.16.1** or higher is required to run this workshop.  
+(The current LTS version is recommended)
+
+For more information, refer to the [Guide on Installing Node.js & npm {macOS & Windows}](https://dev.to/kintonedevprogram/guide-on-installing-nodejs-npm-macos-windows-16ii).
 
 Open the `React-x-REST-API-Workshop` folder in [VS Code](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_command-line) as well:
 
