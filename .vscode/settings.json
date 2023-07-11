@@ -1,8 +1,10 @@
 {
-  "cSpell.words": [
-    "APITOKEN",
-    "Kintone",
-    "nodenv",
-    "youtu.be"
-  ]
+  "[markdown]": { "editor.defaultFormatter": "yzhang.markdown-all-in-one" },
+  "cSpell.words": ["APITOKEN", "Kintone", "nodenv", "youtu.be"],
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.toc.levels": "2..4",
+  "markdown.extension.toc.unorderedList.marker": "*",
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.preview.fontFamily": "Fira Code"
 }
