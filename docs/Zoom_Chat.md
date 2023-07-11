@@ -196,6 +196,7 @@ https://forum.kintone.dev/
 
 ## Create a Kintone Web Database App
 
+### Fields & Field Codes
 How to set the Field Codes for the Kintone App?
 1. Hover over the field
 2. Click the top right gear icon ⚙️
@@ -216,6 +217,18 @@ Set the following Field Codes
 
 - Save!
 - Be sure to click Save and Activate App buttons! 💪
+
+### Kintone API Token
+
+To generate an API Token for a Kintone App:
+
+1. Go to the Kintone App
+1. Go to the Gear icon ⚙️ (top right corner) > Open the App Settings page
+1. Click on the **App Settings** Tab > Click on **API Token** settings
+1. Click the `Generate` button to generate a token
+1. Enable the `View records` & `Add records` checkboxes
+1. Click the `Save` button (top left corner) to save the token setting
+1. Finally, click the Activate / Update App button (top right corner) to implement the token setting change.
 
 Ref:  
 https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs/Workshop_Steps.md#d-create-a-kintone-web-database-app
