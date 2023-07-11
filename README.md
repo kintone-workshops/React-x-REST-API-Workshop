@@ -17,8 +17,7 @@ Let's create a front-end React Component that exchanges the contents of a 3rd pa
 * [Overview of the Repo](#overview-of-the-repo)
 
 ## Completed Project
-![Build_Screenshot.png](./docs/img/Build_Screenshot.png)
-<!-- TODO: Project Demo Gif ![INSERT_PROJECT_DEMO_GIF.gif](./docs/img/INSERT_PROJECT_DEMO_GIF.gif) -->
+![PROJECT_DEMO_GIF.gif](./docs/img/PROJECT_DEMO_GIF.gif)
 
 ## Get Started
 _Clone the Repo & Install Dependencies_ 💪
