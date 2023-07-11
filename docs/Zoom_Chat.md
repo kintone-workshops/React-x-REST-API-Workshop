@@ -1,9 +1,7 @@
 # Zoom Chat Snippets
 
 TODO: Perform the following steps to update the Zoom Chat Snippets:
-* TODO: Update `Create a .env File` section
 * TODO: Update `Create a Kintone Web Database App` section
-* TODO: Swap `bit.ly/KDP23JUL` with the Survey Link
 
 ---
 
