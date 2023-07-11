@@ -13,15 +13,13 @@ This guide outlines all the steps required to complete the workshop.
   * [What do you mean, CORS?](#what-do-you-mean-cors)
   * [Overview](#overview)
   * [Let's get Coding](#lets-get-coding)
-* [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
-* [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
 * [Check your work](#check-your-work)
 * [Still got a problem?](#still-got-a-problem)
 
 ## A. Get started - clone the repo & install dependencies
 
 First, clone the [kintone-workshops/React-x-REST-API-Workshop](https://github.com/kintone-workshops/React-x-REST-API-Workshop) repo!  🚀  
-Then go inside the folder & install the dependencies!
+Then go inside the folders & install the dependencies!
 
 ```shell
 cd Downloads
@@ -29,6 +27,10 @@ cd Downloads
 git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
 cd React-x-REST-API-Workshop
+
+npm install
+
+cd ./backend
 
 npm install
 ```
@@ -163,7 +165,7 @@ By configuring CORS settings on our Express Server backend, we can make REST API
 
 In short, our React Frontend, located on `localhost:3000` will make a fetch request of either `GET` or `POST` to our Express Server at `localhost:5000/getData` or `localhost:5000/postData`. Then, acting as our proxy, our backend will then make a fetch request to `https://example.kintone.com/k/v1/record.json?app=1`, to either GET or POST our data. The data will be returned our backend as JSON, which we will then pass back to the frontend to be displayed.
 
-### Let's get Coding
+### server.js setup
 
 Navigate to [./src/backend/server.js](../src/backend/server.js).
 
@@ -185,7 +187,22 @@ const appID = process.env.APPID;
 const apiToken = process.env.APITOKEN;
 ```
 
-At the end, we wait for the upload to finish and reload the window to ...
+And lastly, we have some CORS configuration:
+```javascript
+app.use(cors());
+const corsOptions = {
+  origin: 'http://localhost:3000'
+};
+```
+
+and some pre-configured REST API endpoints:
+```javascript
+const multipleRecordsEndpoint = `https://${subdomain}.kintone.com/k/v1/records.json?app=${appID}`
+const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?app=${appID}`;
+```
+We got this information from our [Documentation Site](www.kintone.dev), specifically from our [REST API Records](https://kintone.dev/en/docs/kintone/rest-api/records/) documentation.
+
+
 
 ---
 
@@ -194,21 +211,19 @@ At the end, we wait for the upload to finish and reload the window to ...
 Open two terminal windows
 
 From the project root directory, run:
-npm run start
+`npm run start`
 
 From the backend directory, run:
-npm run start
+`npm run start`
 
-## J. Add a record to the Kintone app to ...
-
-1. Go to your Kintone App and add a record by clicking the **➕** button on the upper right side of the screen.
-1. Fill out the fields and save the record by clicking the **Save** button on the bottom left side of the screen.
+Navigate to `localhost:3000` in your browser, enter your Country, State, and City, and click `submit`!
+If your entry appears in your Kintone Database, then congratulations, you did it!
 
 ## Check your work
 
 Is your code not working?
 
-Compare your [./src/main.js](../src/main.js) with the [Solution.md](./Solution.md) to see if it is all written correctly.
+Compare your [./src/backend/server.js](../src/backend/server.js) with the [Solution.md](./Solution.md) to see if it is all written correctly.
 
 ## Still got a problem?
 
