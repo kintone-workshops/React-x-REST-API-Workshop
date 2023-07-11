@@ -3,7 +3,7 @@
 TODO: Perform the following steps to update the Zoom Chat Snippets:
 * TODO: Update `Create a .env File` section
 * TODO: Update `Create a Kintone Web Database App` section
-* TODO: Swap `bit.ly/INSERT_SURVEY_LINK` with the Survey Link
+* TODO: Swap `bit.ly/KDP23JUL` with the Survey Link
 
 ---
 
@@ -295,7 +295,7 @@ https://forum.kintone.dev/
 
 Enter to WIN a $25 Amazon Gift Card! 💰️
 
-https://bit.ly/INSERT_SURVEY_LINK
+https://bit.ly/KDP23JUL
 
 Your feedback is vital for us to improve our workshop!
 Thank you for your time & input ~
