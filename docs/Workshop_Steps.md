@@ -113,8 +113,6 @@ _Confused? 🤔 → Check out the [How to Create a Kintone Database App](https:/
 
 ## E. Generate an API token for the Kintone app
 
-TODO: Is the `Generate an API token for the Kintone app` section needed?
-
 We need to generate an API Token for our Kintone App.
 
 1. From the Kintone App, click the **App Settings** button ⚙️ on the upper right side.
