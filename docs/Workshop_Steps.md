@@ -250,7 +250,7 @@ Compare your [./src/backend/server.js](../src/backend/server.js) with the [Solut
 
 ## Still got a problem?
 
-Check out README's [Debugging](TODO: Update Link) section!
+Check out README's [Debugging](../README.md#debugging) section!
 
 And finally, post your Kintone customization questions over at our community forum:  
 [forum.kintone.dev](https://forum.kintone.dev/)
