@@ -47,7 +47,7 @@ cd backend && npm install
 ⚡ **Node.js v18.16.1** or higher is required to run this workshop.  
 (The current LTS version is recommended)
 
-For more information, refer to the [Guide on Installing Node.js & npm {macOS & Windows}](https://dev.to/kintonedevprogram/guide-on-installing-nodejs-npm-macos-windows-16ii).
+Not the correct versions, or confused? 🤔 → Check out the [Guide on Installing Node.js & npm {macOS & Windows}](https://dev.to/kintonedevprogram/guide-on-installing-nodejs-npm-macos-windows-16ii).
 
 ## B. Get your free Kintone database
 

@@ -95,10 +95,10 @@ Here is a rundown of common problems that may occur & their solutions!
 1. Verify the Node.js & npm versions **inside** the `React-x-REST-API-Workshop` folder
 2. Just installed Node.js? Verify you configured Node.js versions **inside** the `React-x-REST-API-Workshop` folder
 
-* Mac: `nodenv local 14.5.0`
-* Windows: `nvm use 14.5.0`
+* Mac:`nodenv install 18.16.1 && nodenv local 18.16.1`
+* Windows: `nvm install 18.16.1 && nvm use 18.16.1`
 
-Not the correct versions, or confused? 🤔 → Check out the [Guide on Installing Node.js & npm](./docs/Install_NodeJS_npm.md) Doc
+Not the correct versions, or confused? 🤔 → Check out the [Guide on Installing Node.js & npm {macOS & Windows}](https://dev.to/kintonedevprogram/guide-on-installing-nodejs-npm-macos-windows-16ii).
 
 ### Errors related to .env
 
