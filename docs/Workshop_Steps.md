@@ -2,20 +2,19 @@
 This guide outlines all the steps required to complete the workshop.
 
 ## Outline <!-- omit in toc -->
-* [A. Get started - clone the repo \& install dependencies](#a-get-started---clone-the-repo--install-dependencies)
-* [B. Get your free Kintone database](#b-get-your-free-kintone-database)
-* [C. Create a `.env` file](#c-create-a-env-file)
-* [D. Create a Kintone web database app](#d-create-a-kintone-web-database-app)
-  * [Input Fields](#input-fields)
-  * [Blank Space fields](#blank-space-fields)
-  * [Steps to create the Kintone App](#steps-to-create-the-kintone-app)
-* [E. Generate an API token for the Kintone app](#e-generate-an-api-token-for-the-kintone-app)
-* [F. Edit your customize-manifest.json](#f-edit-your-customize-manifestjson)
-* [H. Edit main.js](#h-edit-mainjs)
-* [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
-* [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
-* [Check your work](#check-your-work)
-* [Still got a problem?](#still-got-a-problem)
+- [Workshop Steps](#workshop-steps)
+  - [A. Get started - clone the repo \& install dependencies](#a-get-started---clone-the-repo--install-dependencies)
+  - [B. Get your free Kintone database](#b-get-your-free-kintone-database)
+  - [C. Create a `.env` file](#c-create-a-env-file)
+  - [D. Create a Kintone web database app](#d-create-a-kintone-web-database-app)
+    - [Input Fields](#input-fields)
+    - [Steps to create the Kintone App](#steps-to-create-the-kintone-app)
+  - [E. Generate an API token for the Kintone app](#e-generate-an-api-token-for-the-kintone-app)
+  - [H. Edit main.js](#h-edit-mainjs)
+  - [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
+  - [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
+  - [Check your work](#check-your-work)
+  - [Still got a problem?](#still-got-a-problem)
 
 ## A. Get started - clone the repo & install dependencies
 
@@ -50,8 +49,8 @@ npm install
    * Password: The password you set in Step 3
    * ⚡ If you forget your password, you can reset it by clicking the **Having Trouble Logging In?** link on the login screen.
 
-|                                                                                              |                                                                                                                |
-| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|                                                                                                            |                                                                                                                              |
+| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | ![Step 1: Fill out the Kintone Developer license sign-up form](././img/common_signup/SignUp-1.png)         | ![Step 2: Email address will be the login name & the subdomain will be your unique link](././img/common_signup/SignUp-2.png) |
 | ![Step 3: Check for a "Welcome to Kintone! One More Step To..." email](././img/common_signup/SignUp-3.png) | ![Step 4: Log into Kintone](././img/common_signup/SignUp-4.png)                                                              |
 
@@ -78,33 +77,31 @@ So far, you can fill out the following variables:
 
 ## D. Create a Kintone web database app
 
-TODO: Update `Create a Kintone Web Database App` section
-
-Let's create an **INSERT_PROJECT_NAME** Kintone App!  
+Let's create a Kintone App to store Kintone User's Country, State, and City.  
 
 Here are the required fields & their configurations for our workshop:
 
 ### Input Fields
 
-| Field Type      | Field Name                   | Field Code | Note                                                             |
-| --------------- | ---------------------------- | ---------- | ---------------------------------------------------------------- |
-| Radio button #1 | **I want a...**              | `animal`   | Options: `dog` & `cat`                                           |
-
-### Blank Space fields
-
-| Field Type | Element ID       | Note                                                            |
-| ---------- | ---------------- | --------------------------------------------------------------- |
-| Space #1   | `generateButton` | Where the **Generate Images** button will be displayed          |
+| Field Type    | Field Name  | Field Code | Note |
+| ------------- | ----------- | ---------- | ---- |
+| Text Field #1 | **Country** | `country`  |      |
+| Text Field #2 | **State**   | `state`    |      |
+| Text Field #3 | **City**    | `city`     |      |
 
 ### Steps to create the Kintone App
 
-TODO: Update `Steps to create the Kintone App` section
-
 To create the Kintone App, click the **➕** button on the upper right side of the Kintone Portal.
-* ![Screenshot: The "➕" button](img/common_kintone/CreateApp-1.png)
+![Screenshot: The "➕" button](img/common_kintone/CreateApp-1.png)
 
-Once you have configured the fields, the Kintone App should look like this:  
-![Screenshot of the completed Kintone App](img/KintoneApp_Complete_Arrows.png)
+Click the **Create App from Scratch** button.
+![Screenshot: The create app screen](img/common_kintone/CreateApp-2.png)
+
+Name your App. We chose **I Use Kintone!**
+![Screenshot: The create app screen](img/Kintone-App-Name.png)
+
+Configure your App to have three Text Fields, with field codes for `country`, `state`, and `city`.
+![Screenshot of the completed Kintone App](img/Kintone-Field-Codes.gif)
 
 Then, click the **Save** and **Activate App** buttons! 💪
 
