@@ -1,6 +1,8 @@
 {
   "[markdown]": { "editor.defaultFormatter": "yzhang.markdown-all-in-one" },
   "cSpell.words": ["APITOKEN", "Kintone", "nodenv", "youtu.be"],
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.toc.levels": "2..4",
