@@ -2,20 +2,21 @@
 This guide outlines all the steps required to complete the workshop.
 
 ## Outline <!-- omit in toc -->
-- [Workshop Steps](#workshop-steps)
-  - [A. Get started - clone the repo \& install dependencies](#a-get-started---clone-the-repo--install-dependencies)
-  - [B. Get your free Kintone database](#b-get-your-free-kintone-database)
-  - [C. Create a `.env` file](#c-create-a-env-file)
-  - [D. Create a Kintone web database app](#d-create-a-kintone-web-database-app)
-    - [Input Fields](#input-fields)
-    - [Steps to create the Kintone App](#steps-to-create-the-kintone-app)
-  - [E. Generate an API token for the Kintone app](#e-generate-an-api-token-for-the-kintone-app)
-  - [H. Edit server.js](#h-edit-serverjs)
-    - [What do you mean, CORS?](#what-do-you-mean-cors)
-  - [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
-  - [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
-  - [Check your work](#check-your-work)
-  - [Still got a problem?](#still-got-a-problem)
+* [A. Get started - clone the repo \& install dependencies](#a-get-started---clone-the-repo--install-dependencies)
+* [B. Get your free Kintone database](#b-get-your-free-kintone-database)
+* [C. Create a `.env` file](#c-create-a-env-file)
+* [D. Create a Kintone web database app](#d-create-a-kintone-web-database-app)
+  * [Input Fields](#input-fields)
+  * [Steps to create the Kintone App](#steps-to-create-the-kintone-app)
+* [E. Generate an API token for the Kintone app](#e-generate-an-api-token-for-the-kintone-app)
+* [H. Edit server.js](#h-edit-serverjs)
+  * [What do you mean, CORS?](#what-do-you-mean-cors)
+  * [Overview](#overview)
+  * [Let's get Coding](#lets-get-coding)
+* [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
+* [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
+* [Check your work](#check-your-work)
+* [Still got a problem?](#still-got-a-problem)
 
 ## A. Get started - clone the repo & install dependencies
 
@@ -35,20 +36,20 @@ npm install
 ## B. Get your free Kintone database
 
 1. Go to [kintone.dev/new/](http://kintone.dev/new/) and fill out the form.  
-   * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
-   * ⚠ Do not use uppercase or special characters
-   * 🤖 Example subdomain: `example`
-   * ✅ Use Chrome or Firefox
-   * ❌ Do not use Safari
+    * ⚡ Only use lowercase, numbers, & hyphens in your subdomain
+    * ⚠ Do not use uppercase or special characters
+    * 🤖 Example subdomain: `example`
+    * ✅ Use Chrome or Firefox
+    * ❌ Do not use Safari
 2. Look for "**Welcome to Kintone! One More Step for Developer License**" email in your inbox and click the **Activate Now** button.
-   * Sent from `developer@kintone.com`
-   * If you don't see it, check your spam folder
+    * Sent from `developer@kintone.com`
+    * If you don't see it, check your spam folder
 3. Set the **Initial Password**
 4. Log into your Kintone Subdomain
-   * URL: {your subdomain}.kintone.com (e.g. `example.kintone.com`)
-   * Login Name: Your email address
-   * Password: The password you set in Step 3
-   * ⚡ If you forget your password, you can reset it by clicking the **Having Trouble Logging In?** link on the login screen.
+    * URL: {your subdomain}.kintone.com (e.g. `example.kintone.com`)
+    * Login Name: Your email address
+    * Password: The password you set in Step 3
+    * ⚡ If you forget your password, you can reset it by clicking the **Having Trouble Logging In?** link on the login screen.
 
 |                                                                                                            |                                                                                                                              |
 | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -115,12 +116,12 @@ TODO: Is the `Generate an API token for the Kintone app` section needed?
 We need to generate an API Token for our Kintone App.
 
 1. From the Kintone App, click the **App Settings** button ⚙️ on the upper right side.
-   * ![Screenshot: The "App Settings" button](https://get.kintone.help/k/img/settings_new_icon.png)
+    * ![Screenshot: The "App Settings" button](https://get.kintone.help/k/img/settings_new_icon.png)
 1. Select the **App Settings** tab
 1. Under **Customization and Integration**, click the **API Token** button.
 1. Click **Generate**. ![Screenshot: The "Generate" button](img/common_kintone/KintoneApp_API_1.png)
 1. Check the `Add records` and `Edit records` boxes.  
-   * ![Screenshot: The "Add records" and "Edit records" boxes](img/common_kintone/KintoneApp_API_2.png)
+    * ![Screenshot: The "Add records" and "Edit records" boxes](img/common_kintone/KintoneApp_API_2.png)
 1. Copy the API Token and paste it to the `APITOKEN` variable in your `.env` file.
 1. Click the **Save** button on the bottom right side of the screen.
 1. Click the **Update App** button on the upper right side of the screen.
@@ -167,6 +168,7 @@ In short, our React Frontend, located on `localhost:3000` will make a fetch requ
 Navigate to [./src/backend/server.js](../src/backend/server.js).
 
 At the top of the file, we have our dependency imports and class instantiation:
+
 ``` javascript
 const express = require('express');
 const cors = require('cors');
