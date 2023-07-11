@@ -85,11 +85,11 @@ Here are the required fields & their configurations for our workshop:
 
 ### Input Fields
 
-| Field Type    | Field Name  | Field Code | Note |
-| ------------- | ----------- | ---------- | ---- |
-| Text Field #1 | **Country** | `country`  |      |
-| Text Field #2 | **State**   | `state`    |      |
-| Text Field #3 | **City**    | `city`     |      |
+| Field Type    | Field Name  | Field Code |
+| ------------- | ----------- | ---------- |
+| Text Field #1 | **Country** | `country`  |
+| Text Field #2 | **State**   | `state`    |
+| Text Field #3 | **City**    | `city`     |
 
 ### Steps to create the Kintone App
 
@@ -189,10 +189,15 @@ At the end, we wait for the upload to finish and reload the window to ...
 
 ---
 
-## I. Compile and upload the code to Kintone
+## I. Start the servers
 
-Save your work and build your code by entering `npm run build` in your terminal!
-Then upload your code to Kintone by entering `npm run upload` in your terminal!
+Open two terminal windows
+
+From the project root directory, run:
+npm run start
+
+From the backend directory, run:
+npm run start
 
 ## J. Add a record to the Kintone app to ...
 
