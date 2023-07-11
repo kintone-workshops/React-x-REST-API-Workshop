@@ -153,8 +153,35 @@ As is common for Web Development, API calls from the frontend directly to your K
 
 ### What do you mean, CORS?
 
+Since our frontend resides on localhost:3000 and any API calls to our Kintone Database would be directed at your Kintone subdomain, a backend is needed to act as a proxy.
 ![CORS.png](img/CORS.png)
 
+By configuring CORS settings on our Express Server backend, we can make REST API requests to our Kintone Web Database.
+
+### Overview
+
+In short, our React Frontend, located on `localhost:3000` will make a fetch request of either `GET` or `POST` to our Express Server at `localhost:5000/getData` or `localhost:5000/postData`. Then, acting as our proxy, our backend will then make a fetch request to `https://example.kintone.com/k/v1/record.json?app=1`, to either GET or POST our data. The data will be returned our backend as JSON, which we will then pass back to the frontend to be displayed.
+
+### Let's get Coding
+
+Navigate to [./src/backend/server.js](../src/backend/server.js).
+
+At the top of the file, we have our dependency imports and class instantiation:
+`// Express Server Setup
+const express = require('express');
+const cors = require('cors');
+const PORT = 5000;
+const app = express();`
+
+Next, we have our authentication setup via our `.env` file:
+
+`// Hide sensitive info in a .env file with dotenv
+require('dotenv').config({path: '../.env'});
+
+// Get Kintone credentials from a .env file
+const subdomain = process.env.SUBDOMAIN;
+const appID = process.env.APPID;
+const apiToken = process.env.APITOKEN;`
 
 At the end, we wait for the upload to finish and reload the window to ...
 
