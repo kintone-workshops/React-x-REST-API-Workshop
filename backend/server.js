@@ -29,6 +29,7 @@ const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?
 
 // TODO: Create a GET endpoint at /getData and a POST endpoint at /postData
 
+
 // - - - - - - - END - - - - - - - -
 
 app.listen(PORT, () => {

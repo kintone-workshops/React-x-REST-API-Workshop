@@ -10,7 +10,8 @@ This guide outlines all the steps required to complete the workshop.
     - [Input Fields](#input-fields)
     - [Steps to create the Kintone App](#steps-to-create-the-kintone-app)
   - [E. Generate an API token for the Kintone app](#e-generate-an-api-token-for-the-kintone-app)
-  - [H. Edit main.js](#h-edit-mainjs)
+  - [H. Edit server.js](#h-edit-serverjs)
+    - [What do you mean, CORS?](#what-do-you-mean-cors)
   - [I. Compile and upload the code to Kintone](#i-compile-and-upload-the-code-to-kintone)
   - [J. Add a record to the Kintone app to ...](#j-add-a-record-to-the-kintone-app-to-)
   - [Check your work](#check-your-work)
@@ -117,17 +118,17 @@ We need to generate an API Token for our Kintone App.
    * ![Screenshot: The "App Settings" button](https://get.kintone.help/k/img/settings_new_icon.png)
 1. Select the **App Settings** tab
 1. Under **Customization and Integration**, click the **API Token** button.
-1. Click **Generate**. ![Screenshot: The "Generate" button](img/KintoneApp_API_1.png)
+1. Click **Generate**. ![Screenshot: The "Generate" button](img/common_kintone/KintoneApp_API_1.png)
 1. Check the `Add records` and `Edit records` boxes.  
-   * ![Screenshot: The "Add records" and "Edit records" boxes](img/KintoneApp_API_2.png)
-1. Copy the API Token and paste it to the `VITE_KINTONE_TOKEN` variable in your `.env` file.
+   * ![Screenshot: The "Add records" and "Edit records" boxes](img/common_kintone/KintoneApp_API_2.png)
+1. Copy the API Token and paste it to the `APITOKEN` variable in your `.env` file.
 1. Click the **Save** button on the bottom right side of the screen.
 1. Click the **Update App** button on the upper right side of the screen.
 
 ![KintoneApp_URL.png](img/common_kintone/KintoneApp_URL.png)
 
 ### Update the `.env` file with the App ID as well! <!-- omit in toc -->
-Input the App ID into the `VITE_KINTONE_APPID` variable in your `.env` file.
+Input the App ID into the `APPID` variable in your `.env` file.
 
 If this is NOT your first Kintone App, then you need to update the `"app"` variable with your App ID!
 
@@ -143,9 +144,17 @@ So then the `https://devevents.kintone.com/k/52/` URL tells us that this App's I
 
 ---
 
-## H. Edit main.js
+## H. Edit server.js
 
-For this workshop, we will only be coding in [./src/main.js](../src/main.js).
+For this workshop, we will only be coding in [./src/backend/server.js](../src/backend/server.js).
+This tutorial is focused only on connecting a React frontend to a Kintone Web Database. As such, we won't be covering the front end components (located at [./src/App.js](../src/App.js)).
+
+As is common for Web Development, API calls from the frontend directly to your Kintone Database are not allowed, due to CORS security risks.
+
+### What do you mean, CORS?
+
+![CORS.png](img/CORS.png)
+
 
 At the end, we wait for the upload to finish and reload the window to ...
 
