@@ -109,19 +109,19 @@ Here are the required fields & their configurations for our workshop:
 
 ### Steps to create the Kintone App
 
-To create the Kintone App, click the **➕** button on the upper right side of the Kintone Portal.
+To create the Kintone App, click the **➕** button on the upper right side of the Kintone Portal.  
 ![Screenshot: The "➕" button](img/common_kintone/CreateApp-1.png)
 
-Click the **Create App from Scratch** button.
+Click the **Create App from Scratch** button.  
 ![Screenshot: The create app screen](img/common_kintone/CreateApp-2.png)
 
-Name your App. We chose **I Use Kintone!**
+Name your App. We chose **I Use Kintone!**  
 ![Screenshot: The create app screen](img/Kintone-App-Name.png)
 
-Configure your App to have three Text Fields, with field codes for `country`, `state`, and `city`.
+Configure your App to have three Text Fields, with field codes for `country`, `state`, and `city`.  
 ![Screenshot of the completed Kintone App](img/Kintone-Field-Codes.gif)
 
-Then, click the **Save** and **Activate App** buttons! 💪
+Then, click the **Save** and **Activate App** buttons! 💪  
 
 _Confused? 🤔 → Check out the [How to Create a Kintone Database App](https://youtu.be/pRtfn-8cf_I) video 📺_
 
@@ -223,13 +223,23 @@ We got this information from our [Kintone Developer Program](https://kintone.dev
 
 Open two terminal windows
 
-From the project root directory, run:
-`npm run start`
+### Terminal 1 - Frontend
 
-From the backend directory, run:
-`npm run start`
+```shell
+cd React-x-REST-API-Workshop
 
-Navigate to `localhost:3000` in your browser, enter your Country, State, and City, and click `submit`!
+npm run start
+```
+
+### Terminal 2 - Backend
+
+```shell
+cd React-x-REST-API-Workshop/backend
+
+npm run start
+```
+
+Navigate to [`localhost:3000`](http://localhost:3000/) in your browser, enter your Country, State, and City, and click `submit`!  
 If your entry appears in your Kintone Database, then congratulations, you did it!
 
 ## Check your work
