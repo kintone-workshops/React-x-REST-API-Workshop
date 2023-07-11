@@ -175,7 +175,7 @@ By configuring CORS settings on our Express Server backend, we can make REST API
 
 ### Overview
 
-In short, our React Frontend, located on `localhost:3000` will make a fetch request of either `GET` or `POST` to our Express Server at `localhost:5000/getData` or `localhost:5000/postData`. Then, acting as our proxy, our backend will then make a fetch request to `https://example.kintone.com/k/v1/record.json?app=1`, to either GET or POST our data. The data will be returned our backend as JSON, which we will then pass back to the frontend to be displayed.
+In short, our React Frontend, located on `localhost:3000` will make a fetch request of either `GET` or `POST` to our Express Server at `localhost:50000/getData` or `localhost:50000/postData`. Then, acting as our proxy, our backend will then make a fetch request to `https://example.kintone.com/k/v1/record.json?app=1`, to either GET or POST our data. The data will be returned our backend as JSON, which we will then pass back to the frontend to be displayed.
 
 ### server.js setup
 
@@ -186,7 +186,7 @@ At the top of the file, we have our dependency imports and class instantiation:
 ``` javascript
 const express = require('express');
 const cors = require('cors');
-const PORT = 5000;
+const PORT = 50000;
 const app = express();
 ```
 
@@ -219,7 +219,7 @@ We got this information from our [Kintone Developer Program](https://kintone.dev
 
 ### Let's Start Coding!
 
-We've instantiated our Express Server as `app`, so let's first make a `GET` request route on `localhost:5000/getData`.
+We've instantiated our Express Server as `app`, so let's first make a `GET` request route on `localhost:50000/getData`.
 
 
 ```javascript
@@ -252,7 +252,7 @@ Designate a new constant variable `response` and set it equal to the result of a
 Lastly, another Express Server quirk, we designate our JSON response (which gets sent back to our frontend) like so:
 
 ```javascript
-// This route executes when a GET request lands on localhost:5000/getData
+// This route executes when a GET request lands on localhost:50000/getData
 app.get('/getData', cors(corsOptions), async (req, res) => {
   const fetchOptions = {
     method: 'GET',

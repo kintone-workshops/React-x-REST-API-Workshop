@@ -1,7 +1,7 @@
 // postRecord.js - Passes the POST API request from React to Express server
 
 // Connect with the Express server
-const addRecordEndpoint = 'http://localhost:5000/postData';
+const addRecordEndpoint = 'http://localhost:50000/postData';
 
 export default async function postRecord(location) {
   /* Pass the POST API request from React to Express server */

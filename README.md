@@ -164,7 +164,7 @@ node:events:491
       throw er; // Unhandled 'error' event
       ^
 
-Error: listen EADDRINUSE: address already in use :::5000
+Error: listen EADDRINUSE: address already in use :::50000
     at Server.setupListenHandle [as _listen2] (node:net:1740:16)
     at listenInCluster (node:net:1788:12)
     at Server.listen (node:net:1876:7)
@@ -182,7 +182,7 @@ Emitted 'error' event on Server instance at:
   errno: -48,
   syscall: 'listen',
   address: '::',
-  port: 5000
+  port: 50000
 }
 
 Node.js v18.16.1
@@ -190,16 +190,16 @@ Node.js v18.16.1
 ```
 
 Solution:  
-The important line is `Error: listen EADDRINUSE: address already in use :::5000`.  
-This means that the port 5000 is already in use.
+The important line is `Error: listen EADDRINUSE: address already in use :::50000`.  
+This means that the port 50000 is already in use.
 
 Restart the terminal and try again.  
 
-If the error persists, let's kill the process that is using port 5000 manually.
+If the error persists, let's kill the process that is using port 50000 manually.
 
 ```shell
-# Find the process that is using port 5000
-lsof -i tcp:5000
+# Find the process that is using port 50000
+lsof -i tcp:50000
 # Kill the process
 kill -9 <PID>
 ```

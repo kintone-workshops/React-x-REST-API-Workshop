@@ -3,7 +3,7 @@
 // Express Server Setup
 const express = require('express');
 const cors = require('cors');
-const PORT = 5000;
+const PORT = 50000;
 const app = express();
 
 // Hide sensitive info in a .env file with dotenv

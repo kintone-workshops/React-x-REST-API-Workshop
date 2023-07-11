@@ -5,7 +5,7 @@
 // Express Server Setup
 const express = require('express');
 const cors = require('cors');
-const PORT = 5000;
+const PORT = 50000;
 const app = express();
 
 // Hide sensitive info in a .env file with dotenv
@@ -31,7 +31,7 @@ const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?
 // Kintone app's field codes are 'country' 'state' and 'city'.
 
 // TODO: Create a GET endpoint at /getData
-// This route executes when a GET request lands on localhost:5000/getData
+// This route executes when a GET request lands on localhost:50000/getData
 app.get('/getData', cors(corsOptions), async (req, res) => {
   const fetchOptions = {
     method: 'GET',
@@ -45,7 +45,7 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
 });
 
 // TODO: Create a POST endpoint at /postData
-// This route executes when a POST request lands on localhost:5000/postData
+// This route executes when a POST request lands on localhost:50000/postData
 app.post('/postData', cors(corsOptions), async (req, res) => {
   const requestBody = {
     'app': appID,
