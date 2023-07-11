@@ -236,7 +236,7 @@ If your entry appears in your Kintone Database, then congratulations, you did it
 
 Is your code not working?
 
-Compare your [./src/backend/server.js](../src/backend/server.js) with the [Solution.md](./Solution.md) to see if it is all written correctly.
+Compare your [./src/backend/server.js](../src/backend/server.js) with the [Solution_server.js](./Solution_server.js) to see if it is all written correctly.
 
 ## Still got a problem?
 

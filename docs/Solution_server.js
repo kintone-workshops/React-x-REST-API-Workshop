@@ -1,6 +1,5 @@
-# Completed Version of server.js
+// Completed Version of server.js
 
-```js
 // backend - server.js - Routes API requests from the frontend to Kintone
 
 // Express Server Setup
@@ -81,4 +80,3 @@ app.post('/postData', cors(corsOptions), async (req, res) => {
 app.listen(PORT, () => {
   console.log(`\n Backend server listening at http://localhost:${PORT} \n Confirm if Kintone records are being retrieved at \n http://localhost:${PORT}/getData`);
 });
-```

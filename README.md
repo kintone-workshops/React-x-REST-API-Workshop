@@ -193,7 +193,7 @@ Click the `Install` button on the VS Code pop-up message to install [TODO Highli
 
 ## Completed Code
 If you want the completed code for the index.js file, you can find it here:  
-[Solution](./docs/Solution.md)
+[Solution_server.js](./docs/Solution_server.js)
 
 ---
 
