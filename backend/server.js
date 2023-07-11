@@ -27,10 +27,11 @@ const corsOptions = {
 const multipleRecordsEndpoint = `https://${subdomain}.kintone.com/k/v1/records.json?app=${appID}`
 const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?app=${appID}`;
 
-// TODO: Create a GET endpoint at /getData and a POST endpoint at /postData
+// Kintone app's field codes are 'country' 'state' and 'city'.
 
+// TODO: Create a GET endpoint at /getData
 
-// - - - - - - - END - - - - - - - -
+// TODO: Create a POST endpoint at /postData
 
 app.listen(PORT, () => {
   console.log(`\n Backend server listening at http://localhost:${PORT} \n Confirm if Kintone records are being retrieved at \n http://localhost:${PORT}/getData`);
