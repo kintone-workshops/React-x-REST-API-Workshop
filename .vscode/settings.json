@@ -8,5 +8,8 @@
   "markdown.extension.toc.levels": "2..4",
   "markdown.extension.toc.unorderedList.marker": "*",
   "markdown.extension.toc.updateOnSave": false,
-  "markdown.preview.fontFamily": "Fira Code"
+  "markdown.preview.fontFamily": "Fira Code",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
