@@ -167,21 +167,21 @@ In short, our React Frontend, located on `localhost:3000` will make a fetch requ
 Navigate to [./src/backend/server.js](../src/backend/server.js).
 
 At the top of the file, we have our dependency imports and class instantiation:
-`// Express Server Setup
+``` javascript
 const express = require('express');
 const cors = require('cors');
 const PORT = 5000;
-const app = express();`
+const app = express();
+```
 
 Next, we have our authentication setup via our `.env` file:
 
-`// Hide sensitive info in a .env file with dotenv
+``` javascript
 require('dotenv').config({path: '../.env'});
-
-// Get Kintone credentials from a .env file
 const subdomain = process.env.SUBDOMAIN;
 const appID = process.env.APPID;
-const apiToken = process.env.APITOKEN;`
+const apiToken = process.env.APITOKEN;
+```
 
 At the end, we wait for the upload to finish and reload the window to ...
 
