@@ -217,6 +217,58 @@ const singleRecordEndpoint = `https://${subdomain}.kintone.com/k/v1/record.json?
 
 We got this information from our [Kintone Developer Program](https://kintone.dev/en/) website, specifically from our [REST API Records](https://kintone.dev/en/docs/kintone/rest-api/records/) documentation.
 
+### Let's Start Coding!
+
+We've instantiated our Express Server as `app`, so let's first make a `GET` request route on `localhost:5000/getData`.
+
+
+```javascript
+app.get('/getData', cors(corsOptions), async (req, res) => {
+// configure here
+});
+```
+
+Express Server routes look and function much like functions. We specify this is a `GET` request route with `app.get()`, and then fill in the route name, and its CORS options. Because it is a function, we can designate it as asynchronous easily. One point to note, is how Express Servers designated return values.
+
+You may have noticed that `(req, res)` specifies a request object (normal), **and** and response object. (Not exactly normal!) Normally in a function, responses are handled via `return` statements. This is specific to Express, so be careful.
+
+Thankfully, the rest of routing with Express is simple `fetch` requests.
+
+```javascript
+app.get('/getData', cors(corsOptions), async (req, res) => {
+  const fetchOptions = {
+    method: 'GET',
+    headers: {
+      'X-Cybozu-API-Token': apiToken
+    }
+  }
+  const response = await fetch(multipleRecordsEndpoint, fetchOptions);
+  const jsonResponse = await response.json();
+});
+```
+Like a normal `fetch` request, we designate some options and our headers with our API Token.
+Designate a new constant variable `response` and set it equal to the result of awaiting a `fetch` request to `multipleRecordsEndpoint`. This is a `GET` request, so when we **GET** our database records, we want to see **all** records in the database. Therefore, we are fetching from `records.json`.
+
+Lastly, another Express Server quirk, we designate our JSON response (which gets sent back to our frontend) like so:
+
+```javascript
+// This route executes when a GET request lands on localhost:5000/getData
+app.get('/getData', cors(corsOptions), async (req, res) => {
+  const fetchOptions = {
+    method: 'GET',
+    headers: {
+      'X-Cybozu-API-Token': apiToken
+    }
+  }
+  const response = await fetch(multipleRecordsEndpoint, fetchOptions);
+  const jsonResponse = await response.json();
+  res.json(jsonResponse);
+});
+```
+
+With this, restart your Express Server, and from your React frontend click the `Get!` button. If you have any data in your database, it should be displayed on the page.
+
+
 ---
 
 ## I. Start the servers
