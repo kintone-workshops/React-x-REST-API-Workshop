@@ -35,6 +35,9 @@ cd ./backend
 npm install
 ```
 
+⚡ Node.js v18.16.1 or higher is required to run this workshop.  
+(The current LTS version is recommended)
+
 ## B. Get your free Kintone database
 
 1. Go to [kintone.dev/new/](http://kintone.dev/new/) and fill out the form.  
