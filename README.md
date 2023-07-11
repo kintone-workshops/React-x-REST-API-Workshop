@@ -1,3 +1,6 @@
+# ⚠️ Repo is under construction ⚠️
+Please check back later for updates.
+
 # JavaScript Workshop - Build a React App Using Web Database
 
 ---
