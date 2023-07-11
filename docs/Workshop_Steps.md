@@ -266,8 +266,72 @@ app.get('/getData', cors(corsOptions), async (req, res) => {
 });
 ```
 
-With this, restart your Express Server, and from your React frontend click the `Get!` button. If you have any data in your database, it should be displayed on the page.
+With this, restart your Express Server, and from your React frontend click the `Get!` button. If you have any data in your database, it should be displayed on the page. If the loading spinner never stops, check developer options with `F12` for errors, and reference the [Debugging](../README.md#debugging) section.
 
+Last, we'll code out the `POST` route. It's similar, however we need to correctly structure our `POST BODY` data, so it can be saved to Kintone properly.
+
+```javascript
+app.post('/postData', cors(corsOptions), async (req, res) => {
+
+});
+```
+This time, specify `app.post`, with an endpoint of `/postData`. Express Server makes it easy to create different routes.
+
+Next, we'll structure our data to save to Kintone.
+Looking at our frontend, we can see that the submit button in [App.js](../src/App.js) sends a `location` object with properties of `country`, `state`, and `city`. For this tutorial, we've handled the frontend so we can focus on the backend.
+
+According to the [Kintone REST API documentation](https://kintone.dev/en/docs/kintone/rest-api/records/add-record/#sample-request) our `requestBody` should be formatted as so:
+
+```javascript
+app.post('/postData', cors(corsOptions), async (req, res) => {
+  const requestBody = {
+    'app': appID,
+    'record': {
+      'country': {
+        'value': req.body.country
+      },
+      'state': {
+        'value': req.body.state
+      },
+      'city': {
+        'value': req.body.city
+      }
+    }
+  };
+});
+```
+
+We then put our `requestBody` in our `options` for `fetch`, and make a request to the `singleRecordEndpoint`, as we only wish to save one location at a time to our Kintone Database.
+
+```javascript
+app.post('/postData', cors(corsOptions), async (req, res) => {
+  const requestBody = {
+    'app': appID,
+    'record': {
+      'country': {
+        'value': req.body.country
+      },
+      'state': {
+        'value': req.body.state
+      },
+      'city': {
+        'value': req.body.city
+      }
+    }
+  };
+  const options = {
+    method: 'POST',
+    headers: {
+      'X-Cybozu-API-Token': apiToken,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(requestBody)
+  }
+  const response = await fetch(singleRecordEndpoint, options);
+  const jsonResponse = await response.json();
+  res.json(jsonResponse);
+});
+```
 
 ---
 
