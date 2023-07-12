@@ -1,7 +1,5 @@
 # Zoom Chat Snippets
 
-TODO: Update `Create a Kintone Web Database App` section
-
 ---
 
 <!-- markdownlint-disable -->
