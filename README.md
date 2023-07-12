@@ -82,7 +82,13 @@ For more information, check out the [Workshop_Steps.md > B. Get Your Free Kinton
 
 ## Workshop Steps
 
-TODO: Copy the outline of the workshop steps from [Workshop_Steps.md](./docs/Workshop_Steps.md) & paste it here
+1. [A. Get started - clone the repo \& install dependencies](./docs/Workshop_Steps.md#a-get-started---clone-the-repo--install-dependencies)
+1. [B. Get your free Kintone database](./docs/Workshop_Steps.md#b-get-your-free-kintone-database)
+1. [C. Create a `.env` file](./docs/Workshop_Steps.md#c-create-a-env-file)
+1. [D. Create a Kintone web database app](./docs/Workshop_Steps.md#d-create-a-kintone-web-database-app)
+1. [E. Generate an API token for the Kintone app](./docs/Workshop_Steps.md#e-generate-an-api-token-for-the-kintone-app)
+1. [H. Edit server.js](./docs/Workshop_Steps.md#h-edit-serverjs)
+1. [I. Start the servers](./docs/Workshop_Steps.md#i-start-the-servers)
 
 ---
 
