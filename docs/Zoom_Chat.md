@@ -41,8 +41,9 @@
 ## Check-in Time Slots
 
 * 10:00 - Hello
-* 10:15 - Get Started
-* 10:30 - What is Kintone?
+* 10:10 - Get Started
+* 10:25 - npm install (root & backend)
+* 10:35 - Walk through repo (.env.example, App.js, server.js, etc.)
 * 10:45 - Create a Kintone App
 * 11:00 - 1 hour left
 * 11:15 - 45 min left
@@ -85,6 +86,16 @@ Thank you for waiting & see you soon!
 
 =   =   =   =   =   =   =   =   =   =
 
+## NodeJS
+
+⚡ Node.js v18.16.1 or higher is required to run this workshop.  
+(The current LTS version is recommended)
+
+For more information, refer to the Guide on Installing Node.js & npm {macOS & Windows}:
+https://bit.ly/nodejs-setup-guide
+
+=   =   =   =   =   =   =   =   =   =
+
 ## Start
 =   =   =   =   =   =   =   =   =   =
 
@@ -112,20 +123,31 @@ https://youtu.be/O6FnSGgGBRk
 
 ## Install Commands {Get Started}
 
+#2 terminal windows are needed for this workshop.
+
+#First clone the workshop repo:
+
 cd Downloads
 
 git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
 cd React-x-REST-API-Workshop
 
+#Then install the dependencies from the project root directory:
+
 npm install
+
+#Then install the dependencies from the backend directory:
+
+cd backend && npm install
 
 =   =   =   =   =   =   =   =   =   =
 
 ## Workshop Steps
 
-React-x-REST-API-Workshop/docs
-/Workshop_Steps.md
+We have all the steps for the workshop here in the repo:
+
+./docs/Workshop_Steps.md
 
 or https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs/Workshop_Steps.md
 
@@ -428,5 +450,22 @@ The KINTONE_BASE_URL variable is based on your subdomain.
 For example:
 Subdomain = example
 KINTONE_BASE_URL = https://example.kintone.com
+
+=   =   =   =   =   =   =   =   =   =
+
+## Contest
+
+https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
+
++ Example: https://dev.to/kintonedevprogram/js-customization-to-generate-qr-code-from-kintone-record-values-27e8
++ Contest: https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
++ Forum Category: https://forum.kintone.dev/c/contest/11
+
+=   =   =   =   =   =   =   =   =   =
+
+## Completed Code
+
+If you want the completed code for the index.js file, you can find it here:  
+./docs/Solution_server.js
 
 =   =   =   =   =   =   =   =   =   =
