@@ -167,7 +167,7 @@ So then the `https://devevents.kintone.com/k/52/` URL tells us that this App's I
 
 ## H. Edit server.js
 
-For this workshop, we will only be coding in [./src/backend/server.js](../src/backend/server.js).
+For this workshop, we will only be coding in [./backend/server.js](../backend/server.js).
 This tutorial is focused only on connecting a React frontend to a Kintone Web Database. As such, we won't be covering the front end components (located at [./src/App.js](../src/App.js)).
 
 As is common for Web Development, API calls from the frontend directly to your Kintone Database are not allowed, due to CORS security risks.
@@ -369,7 +369,7 @@ If your entry appears in your Kintone Database, then congratulations, you did it
 
 Is your code not working?
 
-Compare your [./src/backend/server.js](../src/backend/server.js) with the [Solution_server.js](./Solution_server.js) to see if it is all written correctly.
+Compare your [backend/server.js](../backend/server.js) with the [Solution_server.js](./Solution_server.js) to see if it is all written correctly.
 
 ## Still got a problem?
 
