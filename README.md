@@ -1,4 +1,4 @@
-# JavaScript Workshop - Build a React App Using Web Database
+# JavaScript Workshop - Build a React App Using Web Database ⚙️
 
 ---
 
