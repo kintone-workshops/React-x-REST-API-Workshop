@@ -67,6 +67,9 @@ https://kintone.dev/new
 📺 YouTube live stream
 https://youtu.be/JaWjQkeninU
 
+🏆 Contest
+https://bit.ly/kintonecontest23
+
 =   =   =   =   =   =   =   =   =   =
 
 ## Waiting Room
