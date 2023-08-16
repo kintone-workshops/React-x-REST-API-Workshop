@@ -2,21 +2,22 @@
 
 ---
 
-<!-- markdownlint-disable -->
-
+## Table of Content <!-- omit in toc -->
 * [Check-in Time Slots](#check-in-time-slots)
 * [Quick Links](#quick-links)
 * [Waiting Room](#waiting-room)
+* [NodeJS](#nodejs)
 * [Start](#start)
 * [Live on YouTube](#live-on-youtube)
 * [Install Commands {Get Started}](#install-commands-get-started)
-* [Kintone Customize Uploader](#kintone-customize-uploader)
 * [Workshop Steps](#workshop-steps)
 * [YouTube](#youtube)
 * [Create a .env File](#create-a-env-file)
 * [Debugging - Let's Fix Those Problems 💪](#debugging---lets-fix-those-problems-)
 * [Additional Questions 🤔](#additional-questions-)
 * [Create a Kintone Web Database App](#create-a-kintone-web-database-app)
+  * [Fields \& Field Codes](#fields--field-codes)
+  * [Kintone API Token](#kintone-api-token)
 * [Kintone Customization Tutorials](#kintone-customization-tutorials)
 * [Quick Check-in](#quick-check-in)
 * [Looking for the Kintone Subdomain Email? ✉️](#looking-for-the-kintone-subdomain-email-️)
@@ -32,9 +33,11 @@
 * [🚀 Have your Kintone Subdomain ready!](#-have-your-kintone-subdomain-ready)
 * [Got Questions? 🤔](#got-questions-)
 * [Why use Kintone?](#why-use-kintone)
-* [Compile and upload the code to Kintone](#compile-and-upload-the-code-to-kintone)
+* [Start the servers](#start-the-servers)
 * [Where to get the Subdomain, View ID, and App ID?](#where-to-get-the-subdomain-view-id-and-app-id)
 * [Live on YouTube](#live-on-youtube-1)
+* [Contest](#contest)
+* [Completed Code](#completed-code)
 
 ---
 
@@ -86,7 +89,7 @@ Thank you for waiting & see you soon!
 
 =   =   =   =   =   =   =   =   =   =
 
-## NodeJS
+## Node.js
 
 ⚡ Node.js v18.16.1 or higher is required to run this workshop.  
 (The current LTS version is recommended)
@@ -319,7 +322,7 @@ https://forum.kintone.dev/
 
 Enter to WIN a $25 Amazon Gift Card! 💰️
 
-https://bma-events.typeform.com/to/MM8lCuR7
+https://bit.ly/kdp-aug-2023
 
 Your feedback is vital for us to improve our workshop!
 Thank you for your time & input ~
