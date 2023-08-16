@@ -62,7 +62,7 @@ https://bit.ly/react-x-rest
 https://kintone.dev/new
 
 📺 YouTube live stream
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -117,7 +117,7 @@ https://kintone.dev/new
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -168,7 +168,7 @@ https://kintone.dev/new
 =   =   =   =   =   =   =   =   =   =
 
 This is also live on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 It is a bit delayed but for those who want to "rewind", this is another great option ~
 
@@ -319,7 +319,7 @@ https://forum.kintone.dev/
 
 Enter to WIN a $25 Amazon Gift Card! 💰️
 
-https://bit.ly/KDP23JUL
+https://bma-events.typeform.com/to/MM8lCuR7
 
 Your feedback is vital for us to improve our workshop!
 Thank you for your time & input ~
@@ -437,7 +437,7 @@ App ID = 1
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
