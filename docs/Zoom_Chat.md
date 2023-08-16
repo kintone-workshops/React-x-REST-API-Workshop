@@ -117,6 +117,7 @@ If you have not already, sign up for the FREE Kintone Developer License by filli
 https://kintone.dev/new
 
 ✅ Use Chrome or Firefox ; ⚠️ NO Safari
+⚡ Accept Cookies first!
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -129,9 +130,9 @@ https://youtu.be/JaWjQkeninU
 
 ## Install Commands {Get Started}
 
-#2 terminal windows are needed for this workshop.
+# 2 terminal windows are needed for this workshop.
 
-#First clone the workshop repo:
+# First clone the workshop repo:
 
 cd Downloads
 
@@ -159,7 +160,7 @@ or https://github.com/kintone-workshops/React-x-REST-API-Workshop/blob/main/docs
 
 =   =   =   =   =   =   =   =   =   =
 
-# Where to get Kintone Web Database Subdomain?
+## Where to get Kintone Web Database Subdomain?
 
 Sign up for the FREE Kintone Developer License by filling out this web form:
 
@@ -241,8 +242,9 @@ Set the following Field Codes
 * State -> state
 * City -> city
 
-- Save!
-- Be sure to click Save and Activate App buttons! 💪
+Save!
+
+⚡ Be sure to click Save and Activate App buttons! 💪
 
 ### Kintone API Token
 
@@ -404,13 +406,13 @@ Feel free to msg me with a workshop-related or a general Kintone question to me 
 =   =   =   =   =   =   =   =   =   =
 
 ## Why use Kintone?
-+ Super easy to use database / backend solution
-+ You can use vanilla JS to build customizations right on the platform
-+ Companies are hiring engineers to build Kintone integrations
+* Super easy to use database / backend solution
+* You can use vanilla JS to build customizations right on the platform
+* Companies are hiring engineers to build Kintone integrations
 
 More information:
-+ Get Hacking with Kintone - https://kintone.dev/en/landing-page/hackathon/
-+ Job Listing - Kintone Developer Forum - https://forum.kintone.dev/t/seeking-independent-contractors-with-kintone-customization-programming-skills/550
+* Get Hacking with Kintone - https://kintone.dev/en/landing-page/hackathon/
+* Job Listing - Kintone Developer Forum - https://forum.kintone.dev/t/seeking-independent-contractors-with-kintone-customization-programming-skills/550
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -430,7 +432,7 @@ npm run start
 
 Go to your Kintone App's custom view & grab the URL
 Kintone App's URL follows this template:
-https://<SUBDOMAIN>.kintone.com/k/<App ID>/
+https://<SUBDOMAIN>.kintone.com/k/<App_ID>/
 Example:
 
 https://example.kintone.com/k/1/
@@ -463,9 +465,9 @@ KINTONE_BASE_URL = https://example.kintone.com
 
 https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
 
-+ Example: https://dev.to/kintonedevprogram/js-customization-to-generate-qr-code-from-kintone-record-values-27e8
-+ Contest: https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
-+ Forum Category: https://forum.kintone.dev/c/contest/11
+* Example: https://dev.to/kintonedevprogram/js-customization-to-generate-qr-code-from-kintone-record-values-27e8
+* Contest: https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
+* Forum Category: https://forum.kintone.dev/c/contest/11
 
 =   =   =   =   =   =   =   =   =   =
 
