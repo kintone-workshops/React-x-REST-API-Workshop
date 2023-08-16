@@ -65,7 +65,7 @@ https://bit.ly/react-x-rest
 https://kintone.dev/new
 
 📺 YouTube live stream
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -120,7 +120,7 @@ https://kintone.dev/new
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -171,7 +171,7 @@ https://kintone.dev/new
 =   =   =   =   =   =   =   =   =   =
 
 This is also live on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 It is a bit delayed but for those who want to "rewind", this is another great option ~
 
@@ -440,7 +440,7 @@ App ID = 1
 ## Live on YouTube
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
-https://youtu.be/O6FnSGgGBRk
+https://youtu.be/JaWjQkeninU
 
 =   =   =   =   =   =   =   =   =   =
 
