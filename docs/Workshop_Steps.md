@@ -185,7 +185,7 @@ In short, our React Frontend, located on `localhost:3000` will make a fetch requ
 
 ### server.js setup
 
-Navigate to [./src/backend/server.js](../src/backend/server.js).
+Navigate to [./backend/server.js](../backend/server.js).
 
 At the top of the file, we have our dependency imports and class instantiation:
 
