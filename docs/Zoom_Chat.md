@@ -86,7 +86,9 @@ https://bit.ly/react-x-rest
 If you have not already, sign up for the FREE Kintone Developer License:  
 https://kintone.dev/new
 
-✅ Use Chrome or Firefox ; ⚠️ NO Safari
+* ✅ Use Chrome or Firefox
+* ⚠️ NO Safari
+* ⚡ Accept Cookies first!
 
 Thank you for waiting & see you soon!
 
@@ -116,8 +118,9 @@ https://bit.ly/react-x-rest
 If you have not already, sign up for the FREE Kintone Developer License by filling out this web form:  
 https://kintone.dev/new
 
-✅ Use Chrome or Firefox ; ⚠️ NO Safari
-⚡ Accept Cookies first!
+* ✅ Use Chrome or Firefox
+* ⚠️ NO Safari
+* ⚡ Accept Cookies first!
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -140,11 +143,11 @@ git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
 cd React-x-REST-API-Workshop
 
-#Then install the dependencies from the project root directory:
+# Then install the dependencies from the project root directory:
 
 npm install
 
-#Then install the dependencies from the backend directory:
+# Then install the dependencies from the backend directory:
 
 cd backend && npm install
 
@@ -166,8 +169,9 @@ Sign up for the FREE Kintone Developer License by filling out this web form:
 
 https://kintone.dev/new
 
-⚠️ NO Safari
-✅ Use Chrome or Firefox
+* ✅ Use Chrome or Firefox
+* ⚠️ NO Safari
+* ⚡ Accept Cookies first!
 
 =   =   =   =   =   =   =   =   =   =
 
@@ -396,7 +400,9 @@ If you have not already, sign up for the FREE Kintone Developer License by filli
 
 https://kintone.dev/new
 
-✅ Use Chrome or Firefox ; ⚠️ NO Safari
+* ✅ Use Chrome or Firefox
+* ⚠️ NO Safari
+* ⚡ Accept Cookies first!
 
 =   =   =   =   =   =   =   =   =   =
 
