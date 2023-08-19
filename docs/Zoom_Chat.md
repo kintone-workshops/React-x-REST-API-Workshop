@@ -70,6 +70,15 @@ https://youtu.be/JaWjQkeninU
 🏆 Contest
 https://bit.ly/kintonecontest23
 
+🗓️ Meetup
+https://www.meetup.com/kintone-developers/
+
+🗓️ Eventbrite
+https://www.eventbrite.com/o/35299961053
+
+📺 YouTube Channel
+https://bit.ly/KDP_Video
+
 =   =   =   =   =   =   =   =   =   =
 
 ## Waiting Room
@@ -141,7 +150,10 @@ cd Downloads
 
 git clone https://github.com/kintone-workshops/React-x-REST-API-Workshop
 
-cd React-x-REST-API-Workshop
+cd React-x-REST-API-Workshop && npm install
+
+cd React-x-REST-API-Workshop && cd backend && npm install
+
 
 # Then install the dependencies from the project root directory:
 
@@ -448,7 +460,7 @@ App ID = 1
 
 =   =   =   =   =   =   =   =   =   =
 
-## Live on YouTube
+## Live on YouTube 📺
 
 If you get lost, you can "rewind" on our lives stream on YouTube:
 https://youtu.be/JaWjQkeninU
@@ -469,10 +481,12 @@ KINTONE_BASE_URL = https://example.kintone.com
 
 ## Contest
 
-https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
+🏆 Contest - Kintone Customization Contest 2023 Announcement 🏆
+https://bit.ly/kintonecontest23
 
-* Example: https://dev.to/kintonedevprogram/js-customization-to-generate-qr-code-from-kintone-record-values-27e8
-* Contest: https://dev.to/kintonedevprogram/contest-kintone-customization-contest-2023-3bkl
+Example Kintone Customization:
+https://dev.to/kintonedevprogram/preview-powerpoint-slides-on-kintone-13eo
+
 * Forum Category: https://forum.kintone.dev/c/contest/11
 
 =   =   =   =   =   =   =   =   =   =
